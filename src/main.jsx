@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import BackgroundGlass from './partials/BackgorundGlass/BackgroundGlass.jsx'
+import Container from './Layout/Container.jsx'
 
 // Pages 
 import App from './App.jsx'
@@ -37,8 +37,12 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BackgroundGlass>
+
+    <Container>
+    
       <RouterProvider router={router} />
-    </BackgroundGlass>
+  
+    </Container>
+
   </React.StrictMode>,
 )

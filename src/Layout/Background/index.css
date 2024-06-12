@@ -1,0 +1,12 @@
+.background {
+    background-image: linear-gradient(to right bottom, #fcefbb, #d5cb9e, #b0a782, #8c8568, #6a654e, #5a5442, #4b4436, #3b352a, #363027, #312b24, #2c2621, #26211e);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-glass {
+    background: rgba(64, 61, 46, 0.10);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
