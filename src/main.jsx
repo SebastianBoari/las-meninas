@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Container from './Layout/Container.jsx'
 
-// Pages 
+// Pages
 import App from './App.jsx'
 import Contact from './pages/Contact'
 import Products from './pages/Products'
@@ -15,34 +15,30 @@ import './index.css'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App/>,
+    element: <App />,
   },
   {
     path: '/contacto',
-    element: <Contact />
+    element: <Contact />,
   },
   {
     path: '/productos',
-    element: <Products />
+    element: <Products />,
   },
   {
     path: '/producto/:id',
-    element: <Product />
+    element: <Product />,
   },
   {
     path: '*',
-    element: <Error404/>
-  }
+    element: <Error404 />,
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-
     <Container>
-    
       <RouterProvider router={router} />
-  
     </Container>
-
-  </React.StrictMode>,
+  </React.StrictMode>
 )

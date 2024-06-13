@@ -1,7 +1,11 @@
+import Navbar from '../components/Navbar/Navbar'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className="h-lvh w-full">
+      <Navbar />
+      <h1>CONTACTO</h1>
+    </div>
   )
 }
 
