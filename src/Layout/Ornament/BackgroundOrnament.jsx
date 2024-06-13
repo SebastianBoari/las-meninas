@@ -13,7 +13,7 @@ const index = ({ children }) => {
           <TopLeft/>
 
           <div className="flex flex-col items-center justify-center gap-2">
-            <Crown/>
+            <Crown width={"35"} height={"23"}/>
             
             <img className="w-16 h-16 rounded-full" src="../assets/las-meninas-icon.png" alt="Icono de Las Meninas: Casa de Antigüedades"/>
             
