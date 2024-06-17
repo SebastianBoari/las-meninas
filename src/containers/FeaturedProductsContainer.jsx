@@ -1,29 +1,32 @@
+import { useState, useEffect } from 'react'
 import FeaturedProducts from '../components/FeaturedProducts.jsx'
 
+import { db } from '../config/firebase.config.js'
+import { collection, getDocs, query, where } from 'firebase/firestore'
+
 const FeaturedProductsContainer = () => {
-  const featured = [
-    {
-      thumbnail:
-        'https://firebasestorage.googleapis.com/v0/b/las-meninas-d7387.appspot.com/o/image-1.jpg?alt=media&token=98d5b088-c144-4570-8cd9-8fac64b91266',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui quaerat asperiores accusantium!',
-      productId: 1,
-    },
-    {
-      thumbnail:
-        'https://firebasestorage.googleapis.com/v0/b/las-meninas-d7387.appspot.com/o/image-2.jpg?alt=media&token=4a858975-d733-4257-8644-266d3c3299d9',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui quaerat asperiores accusantium!',
-      productId: 2,
-    },
-    {
-      thumbnail:
-        'https://firebasestorage.googleapis.com/v0/b/las-meninas-d7387.appspot.com/o/image-3.jpg?alt=media&token=3ee5c5a5-3c5a-4b2f-94f2-8558b044d817',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui quaerat asperiores accusantium!',
-      productId: 3,
-    },
-  ]
+  const [featured, setFeatured] = useState([])
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const productsCollection = collection(db, 'products')
+        const q = query(productsCollection, where('featured', '==', true))
+        const productsSnapshot = await getDocs(q)
+
+        const productsList = productsSnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }))
+
+        setFeatured(productsList)
+      } catch (error) {
+        console.error(`Error obteniendo los productos:${error}`)
+      }
+    }
+
+    fetchProducts()
+  }, [])
 
   return (
     <div className="flex flex-col mt-16">

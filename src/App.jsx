@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Welcome from './components/Welcome'
 import FeaturedProductsContainer from './containers/FeaturedProductsContainer'
+import CarouselContainer from './containers/CarouselContainer'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
 
       <FeaturedProductsContainer />
 
+      <CarouselContainer />
       <Footer />
     </div>
   )

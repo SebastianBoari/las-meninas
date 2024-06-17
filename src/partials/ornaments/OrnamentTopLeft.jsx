@@ -1,4 +1,4 @@
-const OrnamentTopLeft = ({ width, height, color }) => {
+const OrnamentTopLeft = () => {
   return (
     <svg
       width="30"
