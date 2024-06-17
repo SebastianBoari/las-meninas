@@ -24,8 +24,8 @@ const Navbar = () => {
   }, [location.pathname])
 
   return (
-    <div className="w-full flex justify-center items-center mt-[64px]">
-      <div className="flex space-x-1 bg-[#403D2E] rounded-full p-1 drop-shadow-lg w-fit">
+    <div className="flex items-center justify-center w-full mt-16">
+      <div className="flex p-1 space-x-1 rounded-full bg-militar drop-shadow-lg w-fit">
         {tabs.map((tab) => (
           <NavLink
             to={tab.href}
@@ -45,12 +45,12 @@ const Navbar = () => {
               <>
                 <motion.div
                   layoutId="bubble"
-                  className="absolute inset-0 z-10 bg-[#26211E] drop-shadow-lg rounded-full"
+                  className="absolute inset-0 z-10 rounded-full bg-blackened drop-shadow-lg"
                   transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                 />
 
                 <motion.div
-                  className="flex items-center justify-center relative inset-0 z-10"
+                  className="relative inset-0 z-10 flex items-center justify-center"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6 }}
@@ -58,12 +58,12 @@ const Navbar = () => {
                   <Crown width={'14px'} height={'9px'} color={'#FCEFBB'} />
                 </motion.div>
 
-                <span className="font-serif text-base font-normal text-[#FCEFBB] relative z-10">
+                <span className="relative z-10 font-serif text-base font-normal text-vanilla">
                   {tab.label}
                 </span>
 
                 <motion.div
-                  className="flex items-center justify-between relative inset-0 z-10"
+                  className="relative inset-0 z-10 flex items-center justify-between"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6 }}
@@ -82,7 +82,7 @@ const Navbar = () => {
               </>
             )}
             <span
-              className={`${activeTab === tab.id ? 'hidden' : 'font-serif text-base font-normal text-[#FCEFBB]'}`}
+              className={`${activeTab === tab.id ? 'hidden' : 'font-serif text-base font-normal text-vanilla'}`}
             >
               {tab.label}
             </span>
