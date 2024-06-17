@@ -1,6 +1,3 @@
-import './index.css'
-
-// eslint-disable-next-line react/prop-types
 const Background = ({ children }) => {
   return (
     <div className="background h-full w-full">

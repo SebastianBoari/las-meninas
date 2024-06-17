@@ -1,7 +1,6 @@
-import Background from './Background/index'
-import BackgroundOrnament from './Ornament/BackgroundOrnament'
+import Background from './Background'
+import BackgroundOrnament from './BackgroundOrnament'
 
-// eslint-disable-next-line react/prop-types
 const Container = ({ children }) => {
   return (
     <Background>
