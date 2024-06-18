@@ -3,6 +3,8 @@ import Footer from './components/Footer'
 import Welcome from './components/Welcome'
 import FeaturedProductsContainer from './containers/FeaturedProductsContainer'
 import CarouselContainer from './containers/CarouselContainer'
+import WhatWeOffer from './components/WhatWeOffer'
+import Actions from './components/Actions.jsx'
 
 const App = () => {
   return (
@@ -14,6 +16,11 @@ const App = () => {
       <FeaturedProductsContainer />
 
       <CarouselContainer />
+
+      <WhatWeOffer />
+
+      <Actions />
+
       <Footer />
     </div>
   )

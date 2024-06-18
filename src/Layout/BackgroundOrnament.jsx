@@ -8,8 +8,8 @@ import TopRight from '../partials/ornaments/OrnamentTopRight'
 const BackgroundOrnament = ({ children }) => {
   return (
     <div>
-      <div className="flex flex-row justify-between items-center">
-        <TopLeft />
+      <div className="flex flex-row items-center justify-between">
+        <TopLeft width={'30'} height={'54'} color={'#FCEFBB'} />
 
         <div className="flex flex-col items-center justify-center gap-2">
           <Crown width={'35'} height={'23'} color={'#FCEFBB'} />
@@ -20,18 +20,18 @@ const BackgroundOrnament = ({ children }) => {
             alt="Icono de Las Meninas: Casa de Antigüedades"
           />
 
-          <div className="flex flex-row justify-between items-center gap-5">
+          <div className="flex flex-row items-center justify-between gap-5">
             <FooterLeft width={'28'} height={'28'} color={'#FCEFBB'} />
             <FooterRight width={'28'} height={'28'} color={'#FCEFBB'} />
           </div>
         </div>
 
-        <TopRight />
+        <TopRight width={'30'} height={'54'} color={'#FCEFBB'} />
       </div>
 
       {children}
 
-      <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-row items-center justify-between">
         <FooterLeft width={'30'} height={'30'} color={'#FCEFBB'} />
         <FooterCenter width={'35'} height={'65'} />
         <FooterRight width={'30'} height={'30'} color={'#FCEFBB'} />
