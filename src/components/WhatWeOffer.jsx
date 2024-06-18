@@ -27,7 +27,7 @@ const WhatWeOffer = () => {
   }
 
   return (
-    <div className="grid grid-cols-2 mt-24">
+    <div className="grid grid-cols-2 my-32">
       <div className="relative col-start-2">
         <figure className="absolute WhatWeOffer-figure h-[380px] w-[240px] rounded-md shadow-xl z-10">
           <motion.img
@@ -42,7 +42,7 @@ const WhatWeOffer = () => {
           />
         </figure>
 
-        <div className="flex flex-col justify-between py-1.5 px-7  bg-vanillaGray max-w-[380px] rounded-md w-[380px] h-[480px] drop-shadow-2xl">
+        <div className="flex flex-col justify-between py-1.5 px-7  bg-vanillaGray max-w-[380px] rounded-md w-[380px] h-[480px] shadow-2xl">
           <div className="flex justify-between">
             <OrnamentTopLeft width={'18px'} height={'32px'} color={'#26211E'} />
             <OrnamentCrown width={'32px'} height={'20px'} color={'#26211E'} />

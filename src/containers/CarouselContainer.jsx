@@ -29,30 +29,36 @@ const CarouselContainer = () => {
   }, [])
 
   return (
-    <div className="grid gap-8 mt-16 place-items-center">
+    <div className="grid gap-16 my-32 place-items-center">
       <div className="grid place-items-center">
         <h2 className="font-serif text-4xl font-normal text-vanillaGray">
           Galería
         </h2>
       </div>
 
-      <div className="flex justify-center gap-32">
-        <div className="rounded-md carousel-container bg-vanillaGray w-[545px] h-[345px] relative grid place-items-center overflow-hidden drop-shadow-lg">
-          <Carousel images={images} />
-        </div>
+      <div className="flex justify-center items-center relative h-[390px]">
+        <div className="relative">
+          <div className="flex flex-col w-[340px] h-[385px] justify-center items-center gap-8 bg-vanillaGray p-8 rounded-md absolute carousel-card shadow-2xl">
+            <h2 className="w-full font-serif text-2xl not-italic text-blackened">
+              Curiosidades
+            </h2>
+            <p className="font-serif text-xl font-normal text-blackened">
+              Seguinos en nuestras redes sociales para descubrir nuestros
+              artículos disponibles y ponete en contacto con nosotros si tenés
+              alguna duda.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/lasmeninas_curiosidades/"
+              className="self-end px-6 py-3 font-serif text-base not-italic font-normal transition duration-300 rounded-full bg-militar text-vanillaGray hover:bg-blackened hover:shadow-lg hover:text-vanilla"
+            >
+              Instagram
+            </a>
+          </div>
 
-        <div className="flex flex-col w-[390px] gap-16">
-          <p className="mt-8 font-serif text-2xl font-normal text-vanillaGray">
-            Visita nuestras redes sociales para saber los artículos disponibles
-            y ponte en contacto con nosotros por cualquier duda.
-          </p>
-          <a
-            target="_blank"
-            href="https://www.instagram.com/lasmeninas_curiosidades/"
-            className="self-end px-6 py-3 font-serif text-base not-italic font-normal transition duration-300 rounded-full bg-militar text-vanillaGray hover:bg-blackened hover:shadow-lg hover:text-vanilla"
-          >
-            Instagram
-          </a>
+          <div className="rounded-md carousel-container bg-vanillaGray w-[545px] h-[345px] relative grid place-items-center overflow-hidden shadow-2xl z-10">
+            <Carousel images={images} />
+          </div>
         </div>
       </div>
     </div>

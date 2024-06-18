@@ -29,14 +29,14 @@ const FeaturedProductsContainer = () => {
   }, [])
 
   return (
-    <div className="flex flex-col mt-16">
+    <div className="flex flex-col gap-16 my-32">
       <div className="grid place-items-center">
         <h2 className="font-serif text-4xl not-italic font-normal text-vanillaGray">
           Destacados
         </h2>
       </div>
 
-      <div className="flex items-center justify-center gap-16 mt-8">
+      <div className="flex items-center justify-center gap-16">
         {featured.map((product) => (
           <FeaturedProducts key={product.id} product={product} />
         ))}

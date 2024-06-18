@@ -5,6 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Background */
 .background {
   background-image: linear-gradient(
     to right bottom,
@@ -31,7 +32,10 @@
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }
+/* Background */
 
+
+/* Carousel */
 .next,
 .prev {
   top: calc(50% - 20px);
@@ -46,14 +50,23 @@
   transform: scale(-1);
 }
 
+.carousel-card{
+  right: 530px;
+  top: -20px;
+}
+
 .carousel-img {
   position: absolute;
   max-width: 545px;
   height: 345px;
-  object-fit: cover;
+  object-fit: contain;
 }
+/* Carousel */
 
+
+/* WhatWeOffer */
 .WhatWeOffer-figure {
   left: -210px;
   top: 50px;
 }
+/* WhatWeOffer */

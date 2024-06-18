@@ -5,7 +5,7 @@ import LocationPointIcon from '../partials/icons/LocationPointIcon'
 const Footer = () => {
   return (
     <>
-      <div className="flex items-end justify-between mt-32 mb-16">
+      <div className="flex items-end justify-between my-32">
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2">
             <TelephoneIcon width={'20px'} height={'20px'} color={'#ECE6DA'} />
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="grid w-full my-8 place-items-center">
-        <p className="text-vanillaGray text-[8px] font-sans font-normal">
+        <p className="font-sans text-xs font-normal text-vanillaGray">
           Developed by SebastianBoari
         </p>
       </div>

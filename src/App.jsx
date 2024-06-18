@@ -13,9 +13,9 @@ const App = () => {
 
       <Welcome />
 
-      <FeaturedProductsContainer />
-
       <CarouselContainer />
+
+      <FeaturedProductsContainer />
 
       <WhatWeOffer />
 
