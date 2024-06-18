@@ -34,7 +34,6 @@
 }
 /* Background */
 
-
 /* Carousel */
 .next,
 .prev {
@@ -50,7 +49,7 @@
   transform: scale(-1);
 }
 
-.carousel-card{
+.carousel-card {
   right: 530px;
   top: -20px;
 }
@@ -62,7 +61,6 @@
   object-fit: contain;
 }
 /* Carousel */
-
 
 /* WhatWeOffer */
 .WhatWeOffer-figure {
