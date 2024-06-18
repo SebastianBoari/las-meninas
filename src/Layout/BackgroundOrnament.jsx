@@ -33,7 +33,7 @@ const BackgroundOrnament = ({ children }) => {
 
       <div className="flex flex-row items-center justify-between">
         <FooterLeft width={'30'} height={'30'} color={'#FCEFBB'} />
-        <FooterCenter width={'35'} height={'65'} />
+        <FooterCenter width={'35'} height={'65'} color={'#FCEFBB'} />
         <FooterRight width={'30'} height={'30'} color={'#FCEFBB'} />
       </div>
     </div>
