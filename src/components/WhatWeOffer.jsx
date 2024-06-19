@@ -73,13 +73,13 @@ const WhatWeOffer = () => {
               <div className="grid place-items-center">
                 {selectedImage === imageMap.dining ? (
                   <FurnitureIcon
-                    width={'24ox'}
+                    width={'24px'}
                     height={'24px'}
                     color={'#ECE6DA'}
                   />
                 ) : (
                   <FurnitureIcon
-                    width={'24ox'}
+                    width={'24px'}
                     height={'24px'}
                     color={'#26211E'}
                   />
@@ -101,9 +101,9 @@ const WhatWeOffer = () => {
             >
               <div className="grid place-items-center">
                 {selectedImage === imageMap.paintings ? (
-                  <ArtIcon width={'24ox'} height={'24px'} color={'#ECE6DA'} />
+                  <ArtIcon width={'24px'} height={'24px'} color={'#ECE6DA'} />
                 ) : (
-                  <ArtIcon width={'24ox'} height={'24px'} color={'#26211E'} />
+                  <ArtIcon width={'24px'} height={'24px'} color={'#26211E'} />
                 )}
               </div>
               <p className="text-center">Cuadros, pinturas y marcos.</p>
@@ -121,13 +121,13 @@ const WhatWeOffer = () => {
               <div className="grid place-items-center">
                 {selectedImage === imageMap.lighting ? (
                   <LightningIcon
-                    width={'24ox'}
+                    width={'24px'}
                     height={'24px'}
                     color={'#ECE6DA'}
                   />
                 ) : (
                   <LightningIcon
-                    width={'24ox'}
+                    width={'24px'}
                     height={'24px'}
                     color={'#26211E'}
                   />

@@ -7,6 +7,7 @@ import { collection, getDocs, query, where } from 'firebase/firestore'
 
 const FeaturedProductsContainer = () => {
   const [featured, setFeatured] = useState([])
+  const [activeCard, setActiveCard] = useState(null)
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -37,7 +38,12 @@ const FeaturedProductsContainer = () => {
 
       <div className="flex items-center justify-center gap-16">
         {featured.map((product) => (
-          <FeaturedProductsCard key={product.id} product={product} />
+          <FeaturedProductsCard
+            key={product.id}
+            product={product}
+            isActive={activeCard === product.id}
+            setActiveCard={setActiveCard}
+          />
         ))}
       </div>
     </div>
