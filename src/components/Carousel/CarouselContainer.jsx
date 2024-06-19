@@ -35,13 +35,11 @@ const CarouselContainer = () => {
     <div className="grid gap-16 my-32 place-items-center">
       <CarouselTitle />
 
-      <div className="flex justify-center items-center relative h-[390px]">
-        <div className="relative">
-          <CarouselCard />
+      <div className="flex items-center justify-center gap-8">
+        <CarouselCard />
 
-          <div className="rounded-md carousel-container bg-vanillaGray w-[545px] h-[345px] relative grid place-items-center overflow-hidden shadow-2xl z-10">
-            <Carousel images={images} />
-          </div>
+        <div className="rounded-md carousel-container bg-vanillaGray w-[545px] h-[345px] relative grid place-items-center overflow-hidden shadow-2xl z-10">
+          <Carousel images={images} />
         </div>
       </div>
     </div>
