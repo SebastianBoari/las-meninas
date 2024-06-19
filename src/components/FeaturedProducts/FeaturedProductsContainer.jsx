@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import FeaturedProducts from '../components/FeaturedProducts.jsx'
+import FeaturedProducts from './FeaturedProducts.jsx'
 
-import { db } from '../config/firebase.config.js'
+import { db } from '../../config/firebase.config.js'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 
 const FeaturedProductsContainer = () => {

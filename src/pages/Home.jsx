@@ -1,8 +1,8 @@
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer'
 import Welcome from '../components/Welcome'
-import FeaturedProductsContainer from '../containers/FeaturedProductsContainer'
-import CarouselContainer from '../containers/CarouselContainer'
+import FeaturedProductsContainer from '../components/FeaturedProducts/FeaturedProductsContainer.jsx'
+import CarouselContainer from '../components/Carousel/CarouselContainer.jsx'
 import WhatWeOffer from '../components/WhatWeOffer'
 import Actions from '../components/Actions.jsx'
 
