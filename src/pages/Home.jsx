@@ -13,12 +13,10 @@ const App = () => {
 
       <Welcome />
 
-      <CarouselContainer />
-
       <FeaturedProductsContainer />
 
+      <CarouselContainer />
       <WhatWeOffer />
-
       <Actions />
 
       <Footer />

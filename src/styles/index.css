@@ -49,11 +49,6 @@
   transform: scale(-1);
 }
 
-.carousel-card {
-  right: 520px;
-  top: -40px;
-}
-
 .carousel-img {
   position: absolute;
   max-width: 545px;
