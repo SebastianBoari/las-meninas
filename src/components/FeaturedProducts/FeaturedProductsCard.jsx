@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import OrnamentFooterLeft from '../../partials/ornaments/OrnamentFooterLeft'
 import OrnamentFooterRight from '../../partials/ornaments/OrnamentFooterRight'
 
-const FeaturedProducts = ({ product }) => {
+const FeaturedProductsCard = ({ product }) => {
   return (
     <div className="flex flex-col items-center">
       <motion.figure
@@ -41,4 +41,4 @@ const FeaturedProducts = ({ product }) => {
   )
 }
 
-export default FeaturedProducts
+export default FeaturedProductsCard

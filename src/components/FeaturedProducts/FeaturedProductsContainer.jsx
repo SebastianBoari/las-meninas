@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import FeaturedProducts from './FeaturedProducts'
+import FeaturedProductsCard from './FeaturedProductsCard'
 import FeaturedProductsTitle from './FeaturedProductsTitle'
 
-import { db } from '../../config/firebase.config.js'
+import { db } from '../../config/firebase.config'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 
 const FeaturedProductsContainer = () => {
@@ -12,7 +12,9 @@ const FeaturedProductsContainer = () => {
     const fetchProducts = async () => {
       try {
         const productsCollection = collection(db, 'products')
+
         const q = query(productsCollection, where('featured', '==', true))
+
         const productsSnapshot = await getDocs(q)
 
         const productsList = productsSnapshot.docs.map((doc) => ({
@@ -35,7 +37,7 @@ const FeaturedProductsContainer = () => {
 
       <div className="flex items-center justify-center gap-16">
         {featured.map((product) => (
-          <FeaturedProducts key={product.id} product={product} />
+          <FeaturedProductsCard key={product.id} product={product} />
         ))}
       </div>
     </div>
