@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import FeaturedProducts from './FeaturedProducts.jsx'
+import FeaturedProducts from './FeaturedProducts'
+import FeaturedProductsTitle from './FeaturedProductsTitle'
 
 import { db } from '../../config/firebase.config.js'
 import { collection, getDocs, query, where } from 'firebase/firestore'
@@ -30,11 +31,7 @@ const FeaturedProductsContainer = () => {
 
   return (
     <div className="flex flex-col gap-16 my-32">
-      <div className="grid place-items-center">
-        <h2 className="font-serif text-4xl not-italic font-normal text-vanillaGray">
-          Destacados
-        </h2>
-      </div>
+      <FeaturedProductsTitle />
 
       <div className="flex items-center justify-center gap-16">
         {featured.map((product) => (
