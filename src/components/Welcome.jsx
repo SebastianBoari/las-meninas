@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 const Welcome = () => {
   return (
     <div className="flex items-center justify-center gap-8 mt-8">
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-4">
         <h1 className="font-serif text-3xl not-italic text-vanillaGray drop-shadow-lg">
           Las Meninas
         </h1>

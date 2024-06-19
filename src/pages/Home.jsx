@@ -16,7 +16,9 @@ const App = () => {
       <FeaturedProductsContainer />
 
       <CarouselContainer />
+
       <WhatWeOffer />
+
       <Actions />
 
       <Footer />

@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+import OrnamentFooterLeft from '../../partials/ornaments/OrnamentFooterLeft'
+import OrnamentFooterRight from '../../partials/ornaments/OrnamentFooterRight'
 
 const FeaturedProducts = ({ product }) => {
   return (
@@ -18,9 +20,22 @@ const FeaturedProducts = ({ product }) => {
         <p className="px-2 py-2 font-serif not-italic font-normal text-m text-blackened">
           {product.description}
         </p>
-        <button className="self-center px-4 py-1.5 font-serif not-italic font-normal rounded-sm text-base text-vanillaGray bg-militar hover:bg-blackened transition duration-300">
-          Ver más
-        </button>
+
+        <div className="flex items-end justify-between">
+          <OrnamentFooterLeft
+            width={'24px'}
+            height={'24px'}
+            color={'#26211E'}
+          />
+          <button className="self-center px-4 py-1.5 font-serif not-italic font-normal rounded-md text-base text-vanillaGray bg-militar hover:bg-blackened hover:text-vanilla transition duration-300">
+            Ver más
+          </button>
+          <OrnamentFooterRight
+            width={'24px'}
+            height={'24px'}
+            color={'#26211E'}
+          />
+        </div>
       </div>
     </div>
   )
