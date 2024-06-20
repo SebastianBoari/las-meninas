@@ -33,10 +33,10 @@ const FeaturedProductsContainer = () => {
   }, [])
 
   return (
-    <div className="flex flex-col gap-16 my-32">
+    <div className="flex flex-col splg:gap-16 spxs:gap-6 spxs:my-8 splg:my-12 splg:my-32">
       <FeaturedProductsTitle />
 
-      <div className="flex items-center justify-center gap-16">
+      <div className="flex items-center justify-center xl:gap-16 2xl:gap-18 spxs:flex-col lg:flex-row lg:gap-8 spxs:gap-16">
         {featured.map((product) => (
           <FeaturedProductsCard
             key={product.id}
