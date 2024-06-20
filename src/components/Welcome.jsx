@@ -7,7 +7,7 @@ const Welcome = () => {
         <h1 className="font-serif not-italic lg:text-3xl text-vanillaGray drop-shadow-lg spxs:text-2xl">
           Las Meninas
         </h1>
-        <p className="font-serif font-normal not-italic xl:text-5xl lg:text-3xl text-vanillaGray sm:max-w-[520px] w-full h-auto drop-shadow-lg spxs:text-2xl">
+        <p className="font-serif font-normal not-italic xl:text-5xl lg:text-3xl text-vanillaGray sm:max-w-[440px] w-full h-auto drop-shadow-lg spxs:text-2xl">
           <strong>Casa de Antigüedades</strong>, muebles, iluminación, arte y{' '}
           <strong>eso especial que buscas</strong> para tu hogar.
         </p>
