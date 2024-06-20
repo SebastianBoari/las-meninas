@@ -24,14 +24,14 @@ const Navbar = () => {
   }, [location.pathname])
 
   return (
-    <div className="flex items-center justify-center w-full mt-16">
+    <div className="flex items-center justify-center w-full spxs:mt-8 splg:mt-16">
       <div className="flex p-1 space-x-1 rounded-full bg-militar drop-shadow-lg w-fit">
         {tabs.map((tab) => (
           <NavLink
             to={tab.href}
             key={tab.id}
             className={
-              'relative px-8 py-1 text-sm font-medium text-white transition'
+              'relative spsm:px-8 py-1 spsm:text-sm font-medium text-white transition spxs:px-4 spxs:text-xs'
             }
           >
             {/* Placeholder of ornament */}
