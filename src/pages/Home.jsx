@@ -1,11 +1,11 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Welcome from '../components/Welcome'
-import WhatWeOffer from '../components/WhatWeOffer'
 import Actions from '../components/Actions'
 
 import FeaturedProductsContainer from '../components/FeaturedProducts/FeaturedProductsContainer'
 import CarouselContainer from '../components/Carousel/CarouselContainer'
+import WhatWeOfferContainer from '../components/WhatWeOffer/WhatWeOfferContainer'
 
 const App = () => {
   return (
@@ -14,13 +14,13 @@ const App = () => {
 
       <Welcome />
 
-      <FeaturedProductsContainer />
+      {/* <FeaturedProductsContainer />
 
       <CarouselContainer />
 
-      <WhatWeOffer />
+      <WhatWeOfferContainer />
 
-      <Actions />
+      <Actions /> */}
 
       <Footer />
     </div>
