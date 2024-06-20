@@ -12,8 +12,8 @@ import TopRight from '../partials/ornaments/OrnamentTopRight'
 const Footer = () => {
   return (
     <>
-      <div className="flex items-end justify-between md:my-32 spxs:my-8">
-        <div className="flex items-center justify-between w-full spxs:flex-col spxs:gap-8 sm:flex-row">
+      <div className="grid place-items-center md:my-32 spxs:my-8">
+        <div className="flex items-center w-full spxs:flex-col spxs:gap-8 sm:flex-row sm:justify-center md:justify-between md:max-w-[680px] lg:max-w-[780px] xl:max-w-[1024px] 2xl:max-w-full">
           <div className="flex flex-col gap-4 spxs:items-center sm:items-start">
             <div className="flex items-center gap-2">
               <TelephoneIcon width={'20px'} height={'20px'} color={'#ECE6DA'} />
