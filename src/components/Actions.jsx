@@ -4,7 +4,7 @@ import LocationIcon from '../partials/icons/LocationIcon'
 
 const Actions = () => {
   return (
-    <div className="flex items-center justify-between my-32 ">
+    <div className="flex items-center justify-between my-32 spxs:flex-col spxs:gap-16 sm:gap-0 sm:flex-row">
       <div className="flex flex-col items-center w-64 gap-8">
         <div>
           <MoneyIcon width={'42px'} height={'42px'} color={'#ECE6DA'} />
