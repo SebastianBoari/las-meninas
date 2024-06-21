@@ -15,7 +15,7 @@ export default {
       },
       screens: {
         spxs: '320px',
-        spsm: '375px',
+        spsm: '414px',
         splg: '480px',
       },
     },

@@ -14,13 +14,13 @@ const App = () => {
 
       <Welcome />
 
-      {/* <FeaturedProductsContainer />
+      <FeaturedProductsContainer />
 
       <CarouselContainer />
 
       <WhatWeOfferContainer />
 
-      <Actions /> */}
+      <Actions />
 
       <Footer />
     </div>
