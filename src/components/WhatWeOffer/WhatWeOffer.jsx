@@ -3,8 +3,8 @@ import WhatWeOfferFigure from './WhatWeOfferFigure'
 
 const WhatWeOffer = ({ images, selectedImage, setSelectedImage }) => {
   return (
-    <div className="grid grid-cols-2 my-32">
-      <div className="relative col-start-2">
+    <div className="grid sm:my-32 spxs:my-16 place-items-center">
+      <div className="relative">
         <WhatWeOfferFigure selectedImage={selectedImage} />
 
         <WhatWeOfferCard

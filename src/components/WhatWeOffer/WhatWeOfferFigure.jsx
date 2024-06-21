@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const WhatWeOfferFigure = ({ selectedImage }) => {
   return (
-    <figure className="absolute WhatWeOffer-figure h-[380px] w-[240px] rounded-md shadow-xl z-10">
+    <figure className="absolute z-10 rounded-md shadow-xl WhatWeOffer-figure spxs:hidden lg:block">
       <motion.img
         key={selectedImage}
         className="object-cover h-[380px] w-[240px] rounded-md drop-shadow-2xl"

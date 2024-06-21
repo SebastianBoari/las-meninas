@@ -17,7 +17,7 @@ const WhatWeOfferCard = ({ images, selectedImage, setSelectedImage }) => {
   }
 
   return (
-    <div className="flex flex-col justify-between py-1.5 px-7  bg-vanillaGray max-w-[380px] rounded-md w-[380px] h-[480px] shadow-2xl">
+    <div className="flex flex-col justify-between py-1.5 lg:px-7 spxs:px-2 spxs:w-[280px] bg-vanillaGray max-w-[380px] rounded-md lg:w-[380px] h-[480px] shadow-2xl">
       <div className="flex justify-between">
         <OrnamentTopLeft width={'18px'} height={'32px'} color={'#26211E'} />
         <OrnamentCrown width={'32px'} height={'20px'} color={'#26211E'} />
