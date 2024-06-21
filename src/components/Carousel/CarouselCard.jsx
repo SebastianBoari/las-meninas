@@ -7,14 +7,14 @@ import OrnamentFooterRight from '../../partials/ornaments/OrnamentFooterRight'
 
 const CarouselCard = () => {
   return (
-    <div className="flex flex-col max-w-[340px] justify-between items-center bg-vanillaGray py-1.5 px-7 rounded-md shadow-2xl">
+    <div className="flex flex-col xl:max-w-[340px] justify-between items-center bg-vanillaGray py-1.5 xl:px-7 spxs:px-2 rounded-md shadow-2xl spxs:max-w-[280px]">
       <div className="flex justify-between w-full">
         <OrnamentTopLeft width={'18px'} height={'32px'} color={'#26211E'} />
         <OrnamentCrown width={'32px'} height={'20px'} color={'#26211E'} />
         <OrnamentTopRight width={'18px'} height={'32px'} color={'#26211E'} />
       </div>
 
-      <div className="w-full h-full p-1.5 flex flex-col justify-center gap-8">
+      <div className="w-full h-full p-1.5 flex flex-col justify-center xl:gap-8 xl:px-1 spxs:px-4 spxs:gap-4 ">
         <h2 className="w-full font-serif text-2xl not-italic text-blackened">
           Curiosidades
         </h2>

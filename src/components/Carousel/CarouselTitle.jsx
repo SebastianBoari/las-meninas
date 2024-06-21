@@ -1,7 +1,7 @@
 const CarouselTitle = () => {
   return (
     <div className="grid place-items-center">
-      <h2 className="font-serif text-4xl font-normal text-vanillaGray">
+      <h2 className="font-serif font-normal text-vanillaGray sm:text-4xl spxs:text-2xl splg:text-3xl">
         Galería
       </h2>
     </div>
