@@ -12,6 +12,7 @@
     "host": "vite --host"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "dotenv": "^16.4.5",
     "firebase": "^10.12.2",
     "framer-motion": "^11.2.10",
