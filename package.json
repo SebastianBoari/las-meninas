@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@vis.gl/react-google-maps": "^1.1.0",
     "dotenv": "^16.4.5",
     "firebase": "^10.12.2",
     "formik": "^2.4.6",
