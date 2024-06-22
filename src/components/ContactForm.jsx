@@ -76,13 +76,16 @@ const ContactForm = () => {
         onSubmit={sendEmail}
       >
         {({ isSubmitting }) => (
-          <Form id="contact-form" className="flex flex-col gap-8 p-4">
+          <Form
+            id="contact-form"
+            className="flex flex-col gap-8 p-4 spxs:w-[240px] spsm:w-[280px] splg:w-[320px]"
+          >
             <div className="relative h-fit">
               <Field
                 type="text"
                 name="user_name"
                 placeholder="Nombre completo"
-                className="p-2 w-[280px] rounded-md placeholder:font-serif text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none font-serif drop-shadow focus:shadow-lg"
+                className="w-full p-2 font-serif rounded-md placeholder:font-serif text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
               />
               <ErrorMessage
                 name="user_name"
@@ -96,7 +99,7 @@ const ContactForm = () => {
                 type="email"
                 name="user_email"
                 placeholder="Email"
-                className="p-2 w-[280px] rounded-md placeholder:font-serif text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none font-serif drop-shadow focus:shadow-lg"
+                className="w-full p-2 font-serif rounded-md placeholder:font-serif text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
               />
               <ErrorMessage
                 name="user_email"
@@ -110,7 +113,7 @@ const ContactForm = () => {
                 type="number"
                 name="user_phone"
                 placeholder="Teléfono"
-                className="p-2 w-[280px] rounded-md placeholder:font-serif text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none font-serif drop-shadow focus:shadow-lg"
+                className="w-full p-2 font-serif rounded-md placeholder:font-serif text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
               />
               <ErrorMessage
                 name="user_phone"
@@ -125,7 +128,7 @@ const ContactForm = () => {
                 name="message"
                 placeholder="Consulta"
                 rows="5"
-                className="p-2 w-[280px] rounded-md placeholder:font-serif text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none font-serif drop-shadow focus:shadow-lg"
+                className="w-full p-2 font-serif rounded-md placeholder:font-serif text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
               />
               <ErrorMessage
                 name="message"

@@ -11,10 +11,10 @@ const Contact = () => {
       <Navbar />
 
       <div className="grid mt-8 mb-16 place-items-center">
-        <div className="grid grid-cols-2 place-items-center">
+        <div className="lg:grid lg:grid-cols-2 place-items-center spxs:flex spxs:flex-col spxs:items-center spxs:gap-4">
           <ContactForm />
 
-          <div className="flex flex-col items-center justify-between h-full">
+          <div className="flex flex-col items-center justify-between h-full spxs:gap-4">
             <div className="flex flex-col gap-2 p-4 rounded-md shadow-2xl bg-vanillaGray">
               <ContactMap />
 

@@ -25,7 +25,7 @@ const ContactMisc = () => {
         Otras vias de contacto:
       </h4>
 
-      <div className="flex items-center gap-2">
+      <div className="flex gap-2 lg:flex-row lg:items-center spxs:flex-col-reverse spxs:items-start">
         <div className="flex items-center gap-2 pl-4 pr-2 py-1.5 bg-white rounded-md drop-shadow w-fit">
           <div className="font-serif text-lg font-bold text-blackened">
             {email}
