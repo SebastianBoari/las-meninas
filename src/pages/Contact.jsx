@@ -7,9 +7,9 @@ const Contact = () => {
     <div className="w-full">
       <Navbar />
 
-      <div className="bg-vanillaGray">
-        <ContactForm />
-      </div>
+
+      <ContactForm />
+
 
       <Actions />
 
