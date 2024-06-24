@@ -1,10 +1,16 @@
 import Navbar from '../components/Navbar'
+import Actions from '../components/Actions'
+import Footer from '../components/Footer'
+
+import ProductsContainer from '../components/Products/ProductsContainer'
 
 const Products = () => {
   return (
-    <div className="h-lvh w-full">
+    <div className="w-full">
       <Navbar />
-      <h1>PRODUCTOS</h1>
+      <ProductsContainer />
+      <Actions />
+      <Footer />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar'
 import Actions from '../components/Actions'
 import Footer from '../components/Footer'
+
 import ContactForm from '../components/ContactForm'
 import ContactMap from '../components/ContactMap'
 import ContactMisc from '../components/ContactMisc'
@@ -9,7 +10,6 @@ const Contact = () => {
   return (
     <div className="w-full">
       <Navbar />
-
       <div className="grid mt-8 mb-16 place-items-center">
         <div className="lg:grid lg:grid-cols-2 place-items-center spxs:flex spxs:flex-col spxs:items-center spxs:gap-4">
           <ContactForm />
@@ -46,9 +46,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
       <Actions />
-
       <Footer />
     </div>
   )
