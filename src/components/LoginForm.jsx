@@ -34,8 +34,8 @@ const LoginForm = () => {
   })
 
   return (
-    <div className="grid w-full my-16 place-items-center">
-      <h1 className="my-8 font-serif text-3xl text-vanillaGray">
+    <div className="grid w-full mt-20 mb-64 place-items-center">
+      <h1 className="font-serif text-3xl mb-14 text-vanillaGray">
         Inicio de sesión
       </h1>
 
