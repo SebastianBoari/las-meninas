@@ -16,7 +16,7 @@ const ProductCard = ({
   thumbnails,
 }) => {
   return (
-    <div className="flex items-center justify-center w-full gap-4">
+    <div className="flex flex-wrap items-center justify-center w-full gap-4">
       <article className="p-2 rounded-md bg-vanillaGray max-w-[545px] min-h-[345px] flex flex-col justify-between shadow-2xl">
         <div className="flex justify-between">
           <OrnamentTopLeft width={'18px'} height={'32px'} color={'#26211E'} />

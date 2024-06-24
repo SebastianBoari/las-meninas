@@ -33,7 +33,7 @@ const ProductContainer = () => {
   }, [id])
 
   return (
-    <div className="grid w-full my-32 place-items-center">
+    <div className="grid w-full my-32 place-items-center spxs:my-8 splg:my-16 md:my-32">
       {product ? (
         <ProductCard
           id={product.id}
