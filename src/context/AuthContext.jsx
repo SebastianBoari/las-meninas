@@ -33,7 +33,7 @@ const AuthProvider = ({ children }) => {
     try {
       await loginUser(email, password)
     } catch (error) {
-      console.error('Error al iniciar sesión:', error)
+      console.error('Error al iniciar sesión:', error) // TODO: quit console.error
       return { code: error.code, message: error.message }
     }
   }
@@ -42,7 +42,8 @@ const AuthProvider = ({ children }) => {
     try {
       await logoutUser()
     } catch (error) {
-      console.error('Error al cerrar sesión:', error)
+      console.error('Error al cerrar sesión:', error) // TODO: quit console.error
+      return { code: error.code, message: error.message }
     }
   }
 
