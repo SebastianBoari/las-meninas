@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+
+import { AuthContext } from '../context/AuthContext'
+
 import { NavLink, useLocation } from 'react-router-dom'
 
 import Crown from '../partials/ornaments/OrnamentCrown'
@@ -20,8 +23,12 @@ const Navbar = () => {
     const currentTab = tabs.find((tab) => tab.href === location.pathname)
     if (currentTab) {
       setActiveTab(currentTab.id)
+    } else {
+      setActiveTab(null)
     }
   }, [location.pathname])
+
+  const { logout } = useContext(AuthContext)
 
   return (
     <div className="flex items-center justify-center w-full spxs:mt-8 splg:mt-16">
@@ -97,6 +104,8 @@ const Navbar = () => {
           </NavLink>
         ))}
       </div>
+      {/* Test only */}
+      <button onClick={logout}>Cerrar Sesion</button>
     </div>
   )
 }

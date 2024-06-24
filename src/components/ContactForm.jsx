@@ -1,5 +1,5 @@
 import emailjs from '@emailjs/browser'
-import { emailjsVariables } from '../config/env.config'
+import { emailjsVariables } from '../env'
 
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'

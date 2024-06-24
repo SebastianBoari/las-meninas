@@ -1,7 +1,7 @@
 import ProductCard from './ProductCard'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { db } from '../../config/firebase.config'
+import { db } from '../../firebase/firebase'
 import { doc, getDoc } from 'firebase/firestore'
 
 const ProductContainer = () => {

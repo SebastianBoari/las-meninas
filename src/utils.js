@@ -1,5 +1,5 @@
 import { collection, addDoc } from 'firebase/firestore'
-import { db } from './config/firebase.config'
+import { db } from './firebase/firebase'
 
 /**
  * Adds documents to the 'products' collection in Firestore.

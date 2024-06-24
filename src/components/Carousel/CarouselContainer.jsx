@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-import { storage } from '../../config/firebase.config.js'
+import { storage } from '../../firebase/firebase'
 import { ref, listAll, getDownloadURL } from 'firebase/storage'
 
 import Carousel from './Carousel.jsx'

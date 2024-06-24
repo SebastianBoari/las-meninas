@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import FeaturedProductsCard from './FeaturedProductsCard'
 import FeaturedProductsTitle from './FeaturedProductsTitle'
 
-import { db } from '../../config/firebase.config'
+import { db } from '../../firebase/firebase'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 
 const FeaturedProductsContainer = () => {
