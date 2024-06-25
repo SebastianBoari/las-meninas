@@ -4,16 +4,10 @@ import FooterCenter from '../partials/ornaments/OrnamentFooterCenter'
 import FooterRight from '../partials/ornaments/OrnamentFooterRight'
 import TopLeft from '../partials/ornaments/OrnamentTopLeft'
 import TopRight from '../partials/ornaments/OrnamentTopRight'
-import { motion } from 'framer-motion'
 
 const Container = ({ children }) => {
   return (
-    <motion.div
-      className="w-full h-full background"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 0.5 }}
-    >
+    <div className="w-full h-full background">
       <div className="w-full h-full background-glass">
         <div className="max-w-screen-xl mx-auto min-w-[320px] w-full py-4 px-4">
           <div>
@@ -44,7 +38,7 @@ const Container = ({ children }) => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 
