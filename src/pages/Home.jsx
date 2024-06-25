@@ -1,3 +1,5 @@
+import Container from '../layout/Container' // Background, glass and ornament
+
 import Navbar from '../components/Navbar'
 import Actions from '../components/Actions'
 import Footer from '../components/Footer'
@@ -9,15 +11,17 @@ import WhatWeOfferContainer from '../components/WhatWeOffer/WhatWeOfferContainer
 
 const App = () => {
   return (
-    <div className="w-full">
-      <Navbar />
-      <Welcome />
-      <FeaturedProductsContainer />
-      <CarouselContainer />
-      <WhatWeOfferContainer />
-      <Actions />
-      <Footer />
-    </div>
+    <Container>
+      <div className="w-full">
+        <Navbar />
+        <Welcome />
+        <FeaturedProductsContainer />
+        <CarouselContainer />
+        <WhatWeOfferContainer />
+        <Actions />
+        <Footer />
+      </div>
+    </Container>
   )
 }
 
