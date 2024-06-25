@@ -27,7 +27,7 @@ const ContactForm = () => {
       user_email: Yup.string()
         .email('Ingrese un email válido.')
         .required('Ingrese su email.'),
-      user_phone: Yup.number()
+      user_phone: Yup.string()
         .required('Ingrese su número de teléfono.')
         .min(10, 'Ingrese el número completo.')
         .max(24, 'El número de teléfono no debe exceder los 24 caracteres.'),
