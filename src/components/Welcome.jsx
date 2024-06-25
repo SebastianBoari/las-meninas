@@ -35,10 +35,9 @@ const Welcome = () => {
 
       <figure className="md:max-w-[320px] xl:max-w-[440px] grid place-items-center spxs:max-w-[280px] lg:max-w-[380px]">
         <img
-          className="object-cover"
+          className="object-cover xl:min-w-[440px] xl:min-h-[513px]"
           src="https://firebasestorage.googleapis.com/v0/b/las-meninas-d7387.appspot.com/o/fornitures-compress.png?alt=media&token=0bbe1c64-059f-473f-bdb1-1b33fa4ed95d"
-          alt=""
-          srcSet=""
+          alt="Conjunto variado de muebles"
         />
       </figure>
     </div>
