@@ -4,28 +4,28 @@ const Welcome = () => {
   return (
     <div className="flex items-center justify-center gap-8 mt-8 spxs:flex-col md:flex-row">
       <div className="flex flex-col gap-4 splg:max-w-[320px] spxs:max-w-[280px] xl:max-w-[540px]">
-        <h1 className="font-serif not-italic lg:text-3xl text-vanillaGray drop-shadow-lg spxs:text-2xl">
+        <h1 className="font-primary not-italic lg:text-3xl text-vanillaGray drop-shadow-lg spxs:text-2xl">
           Las Meninas
         </h1>
-        <p className="font-serif font-normal not-italic xl:text-5xl lg:text-3xl text-vanillaGray sm:max-w-[440px] w-full h-auto drop-shadow-lg spxs:text-2xl">
+        <p className="font-primary font-normal not-italic xl:text-5xl lg:text-3xl text-vanillaGray sm:max-w-[440px] w-full h-auto drop-shadow-lg spxs:text-2xl">
           <strong>Casa de Antigüedades</strong>, muebles, iluminación, arte y{' '}
           <strong>eso especial que buscas</strong> para tu hogar.
         </p>
 
         <div className="flex w-full gap-6 xl:items-center xl:self-end spxs:flex-col spxs:self-start spxs:items-start xl:flex-row">
           <div className="w-full xl:w-fit spxs:flex spxs:flex-col xl:flex-row xl:gap-1">
-            <p className="font-sans text-xs not-italic font-normal text-vanillaGray">
+            <p className="font-secondary text-xs not-italic font-normal text-vanillaGray">
               ¿Tienes antigüedades que quieras vender?{' '}
             </p>
             <NavLink
-              className="font-sans text-xs not-italic font-normal transition duration-300 text-vanillaGray/60 hover:text-blackened"
+              className="font-secondary text-xs not-italic font-normal transition duration-300 text-vanillaGray/60 hover:text-blackened"
               to="/contacto"
             >
               Mándanos un mensaje
             </NavLink>
           </div>
           <NavLink
-            className="px-6 py-3 font-serif text-base not-italic font-normal transition duration-300 rounded-full md:self-end text-vanillaGray bg-militar drop-shadow hover:shadow-lg hover:bg-blackened hover:text-vanilla"
+            className="px-6 py-3 font-primary text-base not-italic font-normal transition duration-300 rounded-full md:self-end text-vanillaGray bg-militar drop-shadow hover:shadow-lg hover:bg-blackened hover:text-vanilla"
             to="/productos"
           >
             Ver catálogo

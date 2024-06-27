@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['Cormorant Garamond', 'serif'],
-        sans: ['Open Sans', 'sans-serif'],
+        primary: ['Cormorant Garamond', 'serif'],
+        secondary: ['Asar', 'serif'],
       },
       colors: {
         vanillaGray: '#ECE6DA',

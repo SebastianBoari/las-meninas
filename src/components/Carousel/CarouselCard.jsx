@@ -15,17 +15,17 @@ const CarouselCard = () => {
       </div>
 
       <div className="w-full h-full p-1.5 flex flex-col justify-center xl:gap-8 xl:px-1 spxs:px-4 spxs:gap-4 ">
-        <h2 className="w-full font-serif text-2xl not-italic text-blackened">
+        <h2 className="w-full font-primary text-2xl not-italic text-blackened">
           Curiosidades
         </h2>
-        <p className="font-serif text-xl font-normal text-blackened">
+        <p className="font-primary text-xl font-normal text-blackened">
           Seguinos en nuestras redes sociales para descubrir nuestros artículos
           disponibles y ponete en contacto con nosotros si tenés alguna duda.
         </p>
         <a
           target="_blank"
           href="https://www.instagram.com/lasmeninas_curiosidades/"
-          className="self-end px-6 py-3 font-serif text-base not-italic font-normal transition duration-300 rounded-full bg-militar text-vanillaGray hover:bg-blackened hover:shadow-lg hover:text-vanilla"
+          className="self-end px-6 py-3 font-primary text-base not-italic font-normal transition duration-300 rounded-full bg-militar text-vanillaGray hover:bg-blackened hover:shadow-lg hover:text-vanilla"
         >
           Instagram
         </a>

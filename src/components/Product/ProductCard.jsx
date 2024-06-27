@@ -25,15 +25,15 @@ const ProductCard = ({
         </div>
 
         <div className="flex flex-col justify-between min-h-[220px] gap-3 px-4">
-          <h1 className="font-serif text-2xl">{title}</h1>
-          <p className="font-serif text-xl">{description}</p>
-          <p className="font-serif text-xl">
+          <h1 className="font-primary text-2xl">{title}</h1>
+          <p className="font-primary text-xl">{description}</p>
+          <p className="font-primary text-xl">
             Cantidad:
             {quantity
               ? ` ${quantity} unidades disponibles`
               : ' Única unidad disponible'}
           </p>
-          <p className="font-serif text-xl">
+          <p className="font-primary text-xl">
             {price
               ? `${currency ? 'USD' : 'ARS'}$${price}`
               : 'Consultar precio'}

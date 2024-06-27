@@ -46,7 +46,7 @@ const FeaturedProductsCard = ({ product, isActive, setActiveCard }) => {
             />
           </div>
 
-          <p className="px-2 py-2 font-serif not-italic font-normal text-m text-blackened">
+          <p className="px-2 py-2 font-primary not-italic font-normal text-m text-blackened">
             {product.description}
           </p>
 
@@ -59,8 +59,8 @@ const FeaturedProductsCard = ({ product, isActive, setActiveCard }) => {
             <button
               className={
                 isActive
-                  ? 'self-center px-4 py-1.5 font-serif not-italic font-normal rounded-md text-base  bg-blackened text-vanilla transition duration-300 drop-shadow'
-                  : 'self-center px-4 py-1.5 font-serif not-italic font-normal rounded-md text-base text-vanillaGray bg-militar hover:bg-blackened hover:text-vanilla transition duration-300'
+                  ? 'self-center px-4 py-1.5 font-primary not-italic font-normal rounded-md text-base  bg-blackened text-vanilla transition duration-300 drop-shadow'
+                  : 'self-center px-4 py-1.5 font-primary not-italic font-normal rounded-md text-base text-vanillaGray bg-militar hover:bg-blackened hover:text-vanilla transition duration-300'
               }
             >
               Ver más

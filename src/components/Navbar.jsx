@@ -61,7 +61,7 @@ const Navbar = () => {
                   <Crown width={'14px'} height={'9px'} color={'#FCEFBB'} />
                 </motion.div>
 
-                <span className="relative z-10 font-serif text-base font-normal text-vanilla">
+                <span className="relative z-10 font-primary text-base font-normal text-vanilla">
                   {tab.label}
                 </span>
 
@@ -85,7 +85,7 @@ const Navbar = () => {
               </>
             )}
             <span
-              className={`${activeTab === tab.id ? 'hidden' : 'font-serif text-base font-normal text-vanilla'}`}
+              className={`${activeTab === tab.id ? 'hidden' : 'font-primary text-base font-normal text-vanilla'}`}
             >
               {tab.label}
             </span>

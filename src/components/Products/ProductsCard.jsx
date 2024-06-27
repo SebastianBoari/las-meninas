@@ -56,10 +56,10 @@ const ProductsCard = ({
           </div>
 
           <div className="p-2">
-            <h3 className="font-serif text-lg not-italic font-bold text-blackened">
+            <h3 className="font-primary text-lg not-italic font-bold text-blackened">
               {truncateText(title, 80)}
             </h3>
-            <p className="font-serif text-base not-italic font-normal text-blackened">
+            <p className="font-primary text-base not-italic font-normal text-blackened">
               {truncateText(description, 120)}
             </p>
           </div>
@@ -74,8 +74,8 @@ const ProductsCard = ({
               to={`/producto/${id}`}
               className={
                 isActive
-                  ? 'self-center px-4 py-1.5 font-serif not-italic font-normal rounded-md text-base  bg-blackened text-vanilla transition duration-300 drop-shadow'
-                  : 'self-center px-4 py-1.5 font-serif not-italic font-normal rounded-md text-base text-vanillaGray bg-militar hover:bg-blackened hover:text-vanilla transition duration-300'
+                  ? 'self-center px-4 py-1.5 font-primary not-italic font-normal rounded-md text-base  bg-blackened text-vanilla transition duration-300 drop-shadow'
+                  : 'self-center px-4 py-1.5 font-primary not-italic font-normal rounded-md text-base text-vanillaGray bg-militar hover:bg-blackened hover:text-vanilla transition duration-300'
               }
             >
               Ver más

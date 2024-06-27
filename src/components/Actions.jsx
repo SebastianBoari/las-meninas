@@ -9,7 +9,7 @@ const Actions = () => {
         <div>
           <MoneyIcon width={'42px'} height={'42px'} color={'#ECE6DA'} />
         </div>
-        <p className="font-serif not-italic font-normal text-center text-vanillaGray">
+        <p className="not-italic font-normal text-center font-primary text-vanillaGray">
           Vendé tus antigüedades que ya no uses, valoramos tus pertenencias.
         </p>
       </div>
@@ -18,7 +18,7 @@ const Actions = () => {
         <div>
           <SellIcon width={'42px'} height={'42px'} color={'#ECE6DA'} />
         </div>
-        <p className="font-serif not-italic font-normal text-center text-vanillaGray">
+        <p className="not-italic font-normal text-center font-primary text-vanillaGray">
           Venta de antigüedades originales o restauradas igual a nuevo
         </p>
       </div>
@@ -27,7 +27,7 @@ const Actions = () => {
         <div>
           <LocationIcon width={'42px'} height={'42px'} color={'#ECE6DA'} />
         </div>
-        <p className="font-serif not-italic font-normal text-center text-vanillaGray">
+        <p className="font-normal text-center font-primary text-vanillaGray">
           Visita nuestro local para ver todo lo que tenemos disponible
         </p>
       </div>

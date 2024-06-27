@@ -23,20 +23,20 @@ const Contact = () => {
 
                 <div className="flex justify-between w-full">
                   <div className="p-2 bg-white rounded-md">
-                    <p className="font-serif text-base not-italic font-normal text-blackened">
+                    <p className="font-primary text-base not-italic font-normal text-blackened">
                       Lunes a Sábados
                     </p>
 
-                    <p className="font-serif text-base not-italic font-normal text-blackened">
+                    <p className="font-primary text-base not-italic font-normal text-blackened">
                       10:00hs a 13:00hs
                     </p>
 
-                    <p className="font-serif text-base not-italic font-normal text-blackened">
+                    <p className="font-primary text-base not-italic font-normal text-blackened">
                       16:30 a 19:30hs
                     </p>
                   </div>
                   <div className="p-2 bg-white rounded-md">
-                    <p className="font-serif text-base not-italic font-normal text-blackened max-w-[128px]">
+                    <p className="font-primary text-base not-italic font-normal text-blackened max-w-[128px]">
                       Calle Ficticia 2976 - Nueva Ciudad, San Provincia.
                     </p>
                   </div>

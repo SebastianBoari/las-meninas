@@ -31,7 +31,7 @@ const SessionButton = () => {
             {!user ? (
               <li className="flex flex-col items-center w-full">
                 <NavLink
-                  className="w-full p-2 font-serif text-base text-center transition duration-300 rounded-md cursor-pointer text-blackened hover:text-vanillaGray hover:bg-militar"
+                  className="w-full p-2 font-primary text-base text-center transition duration-300 rounded-md cursor-pointer text-blackened hover:text-vanillaGray hover:bg-militar"
                   to="/iniciar-sesion"
                 >
                   Iniciar sesión
@@ -41,7 +41,7 @@ const SessionButton = () => {
               <>
                 <li className="flex flex-col items-center w-full">
                   <button
-                    className="w-full p-2 font-serif text-base text-center transition duration-300 rounded-md cursor-pointer text-blackened hover:text-vanillaGray hover:bg-red-800"
+                    className="w-full p-2 font-primary text-base text-center transition duration-300 rounded-md cursor-pointer text-blackened hover:text-vanillaGray hover:bg-red-800"
                     onClick={logout}
                   >
                     Cerrar sesión
@@ -49,7 +49,7 @@ const SessionButton = () => {
                 </li>
                 <li className="flex flex-col items-center w-full">
                   <NavLink
-                    className="w-full p-2 font-serif text-base text-center transition duration-300 rounded-md cursor-pointer text-blackened hover:text-vanillaGray hover:bg-militar"
+                    className="w-full p-2 font-primary text-base text-center transition duration-300 rounded-md cursor-pointer text-blackened hover:text-vanillaGray hover:bg-militar"
                     to="/admin"
                   >
                     Panel

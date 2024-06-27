@@ -25,7 +25,7 @@ const WhatWeOfferCard = ({ images, selectedImage, setSelectedImage }) => {
       </div>
 
       <div className="flex flex-col items-center justify-between h-full gap-2 px-3 py-1">
-        <div className="p-2 font-serif text-lg not-italic font-normal text-center rounded-md text-blackened max-w-56">
+        <div className="p-2 font-primary text-lg not-italic font-normal text-center rounded-md text-blackened max-w-56">
           <h3 className="text-center">
             En <strong>Las Meninas</strong> puede encontrar una amplia gama de
             antigüedades.
@@ -37,8 +37,8 @@ const WhatWeOfferCard = ({ images, selectedImage, setSelectedImage }) => {
           whileHover={{ scale: 1.05 }}
           className={
             selectedImage === images.dining
-              ? 'bg-militar p-2 rounded-md font-serif text-lg not-italic font-normal text-vanillaGray max-w-56 cursor-pointer shadow-xl transition duration-300'
-              : 'p-2 font-serif text-lg not-italic font-normal text-center rounded-md text-blackened max-w-56 cursor-pointer transition duration-300'
+              ? 'bg-militar p-2 rounded-md font-primary text-lg not-italic font-normal text-vanillaGray max-w-56 cursor-pointer shadow-xl transition duration-300'
+              : 'p-2 font-primary text-lg not-italic font-normal text-center rounded-md text-blackened max-w-56 cursor-pointer transition duration-300'
           }
         >
           <div className="grid place-items-center">
@@ -58,8 +58,8 @@ const WhatWeOfferCard = ({ images, selectedImage, setSelectedImage }) => {
           whileHover={{ scale: 1.05 }}
           className={
             selectedImage === images.paintings
-              ? 'bg-militar p-2 rounded-md font-serif text-lg not-italic font-normal text-vanillaGray max-w-56 cursor-pointer shadow-xl transition duration-300'
-              : 'p-2 font-serif text-lg not-italic font-normal text-center rounded-md text-blackened max-w-56 cursor-pointer transition duration-300'
+              ? 'bg-militar p-2 rounded-md font-primary text-lg not-italic font-normal text-vanillaGray max-w-56 cursor-pointer shadow-xl transition duration-300'
+              : 'p-2 font-primary text-lg not-italic font-normal text-center rounded-md text-blackened max-w-56 cursor-pointer transition duration-300'
           }
         >
           <div className="grid place-items-center">
@@ -77,8 +77,8 @@ const WhatWeOfferCard = ({ images, selectedImage, setSelectedImage }) => {
           whileHover={{ scale: 1.05 }}
           className={
             selectedImage === images.lighting
-              ? 'bg-militar p-2 rounded-md font-serif text-lg not-italic font-normal text-vanillaGray max-w-56 cursor-pointer shadow-xl transition duration-300'
-              : 'p-2 font-serif text-lg not-italic font-normal text-center rounded-md text-blackened max-w-56 cursor-pointer transition duration-300'
+              ? 'bg-militar p-2 rounded-md font-primary text-lg not-italic font-normal text-vanillaGray max-w-56 cursor-pointer shadow-xl transition duration-300'
+              : 'p-2 font-primary text-lg not-italic font-normal text-center rounded-md text-blackened max-w-56 cursor-pointer transition duration-300'
           }
         >
           <div className="grid place-items-center">

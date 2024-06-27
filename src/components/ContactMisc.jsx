@@ -21,13 +21,13 @@ const ContactMisc = () => {
 
   return (
     <div className="flex flex-col gap-4 p-4 rounded-md shadow-2xl bg-vanillaGray">
-      <h4 className="font-serif text-lg font-normal text-blackened">
+      <h4 className="font-primary text-lg font-normal text-blackened">
         Otras vías de contacto:
       </h4>
 
       <div className="flex gap-2 lg:flex-row lg:items-center spxs:flex-col-reverse spxs:items-start">
         <div className="flex items-center gap-2 pl-4 pr-2 py-1.5 bg-white rounded-md drop-shadow w-fit">
-          <div className="font-serif text-lg font-normal text-blackened">
+          <div className="font-primary text-lg font-normal text-blackened">
             {email}
           </div>
           <motion.div
