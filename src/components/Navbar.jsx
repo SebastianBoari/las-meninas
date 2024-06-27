@@ -27,7 +27,7 @@ const Navbar = () => {
   }, [location.pathname])
 
   return (
-    <div className="flex items-center justify-center w-full spxs:mt-8 splg:mt-16">
+    <div className="flex items-center justify-center w-full gap-4 spxs:mt-8 splg:mt-16">
       <div className="flex p-1 space-x-1 rounded-full bg-militar drop-shadow-lg w-fit">
         {tabs.map((tab) => (
           <NavLink
