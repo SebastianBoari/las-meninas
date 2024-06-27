@@ -18,11 +18,11 @@ const Contact = () => {
             <ContactForm />
 
             <div className="flex flex-col items-center justify-between h-full spxs:gap-4">
-              <div className="flex flex-col gap-2 p-4 rounded-md shadow-2xl bg-vanillaGray">
+              <div className="flex flex-col gap-2 p-3 rounded-md shadow-2xl bg-vanillaGray">
                 <ContactMap />
 
                 <div className="flex justify-between w-full">
-                  <div>
+                  <div className="p-2 bg-white rounded-md">
                     <p className="font-serif text-base not-italic font-normal text-blackened">
                       Lunes a Sábados
                     </p>
@@ -35,7 +35,7 @@ const Contact = () => {
                       16:30 a 19:30hs
                     </p>
                   </div>
-                  <div>
+                  <div className="p-2 bg-white rounded-md">
                     <p className="font-serif text-base not-italic font-normal text-blackened max-w-[128px]">
                       Calle Ficticia 2976 - Nueva Ciudad, San Provincia.
                     </p>

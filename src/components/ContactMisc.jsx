@@ -21,13 +21,13 @@ const ContactMisc = () => {
 
   return (
     <div className="flex flex-col gap-4 p-4 rounded-md shadow-2xl bg-vanillaGray">
-      <h4 className="font-serif text-lg font-bold text-blackened">
-        Otras vias de contacto:
+      <h4 className="font-serif text-lg font-normal text-blackened">
+        Otras vías de contacto:
       </h4>
 
       <div className="flex gap-2 lg:flex-row lg:items-center spxs:flex-col-reverse spxs:items-start">
         <div className="flex items-center gap-2 pl-4 pr-2 py-1.5 bg-white rounded-md drop-shadow w-fit">
-          <div className="font-serif text-lg font-bold text-blackened">
+          <div className="font-serif text-lg font-normal text-blackened">
             {email}
           </div>
           <motion.div
@@ -57,7 +57,7 @@ const ContactMisc = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.8 }}
               transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-              className="p-2 bg-gray-100 rounded-md cursor-pointer drop-shadow hover:shadow hover:shadow-green-400"
+              className="p-2 bg-gray-100 rounded-md cursor-pointer drop-shadow hover:shadow"
             >
               <WhatsAppIcon
                 width={'24px'}
@@ -74,7 +74,7 @@ const ContactMisc = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.8 }}
               transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-              className="p-2 bg-gray-100 rounded-md cursor-pointer drop-shadow hover:shadow hover:shadow-indigo-400"
+              className="p-2 bg-gray-100 rounded-md cursor-pointer drop-shadow hover:shadow"
             >
               <InstagramColoredIcon width={'24px'} height={'24px'} />
             </motion.div>
