@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="flex flex-col gap-4 spxs:items-center sm:items-start">
             <div className="flex items-center gap-2">
               <TelephoneIcon width={'20px'} height={'20px'} color={'#ECE6DA'} />
-              <p className="font-primary text-base not-italic font-normal text-vanillaGray">
+              <p className="text-sm font-secondary text-vanillaGray">
                 +54-3446444333{' '}
               </p>
             </div>
@@ -25,7 +25,7 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               <InstagramIcon width={'20px'} height={'20px'} color={'#ECE6DA'} />
 
-              <p className="font-primary text-base not-italic font-normal text-vanillaGray">
+              <p className="text-sm font-secondary text-vanillaGray">
                 @las-meninas
               </p>
             </div>
@@ -36,7 +36,7 @@ const Footer = () => {
                 height={'24px'}
                 color={'#ECE6DA'}
               />
-              <p className="font-primary text-base not-italic font-normal text-vanillaGray">
+              <p className="text-sm font-secondary text-vanillaGray">
                 Calle 123 - Ciudad, Provincia.
               </p>
             </div>
@@ -61,16 +61,16 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col gap-1">
-              <h3 className="font-primary text-base not-italic font-bold text-blackened">
+              <h3 className="text-sm font-normal font-secondary text-blackened">
                 Horarios:
               </h3>
-              <p className="font-primary text-base not-italic font-normal text-blackened">
+              <p className="text-sm font-normal font-secondary text-blackened">
                 Lunes a Sábados
               </p>
-              <p className="font-primary text-base not-italic font-normal text-blackened">
+              <p className="text-sm font-normal font-secondary text-blackened">
                 10:00hs a 13:00hs
               </p>
-              <p className="font-primary text-base not-italic font-normal text-blackened">
+              <p className="text-sm font-normal font-secondary text-blackened">
                 16:30 a 19:30hs
               </p>
             </div>

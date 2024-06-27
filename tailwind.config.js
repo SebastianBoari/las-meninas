@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         primary: ['Cormorant Garamond', 'serif'],
-        secondary: ['Asar', 'serif'],
+        secondary: ['Frank Ruhl Libre', 'serif'],
       },
       colors: {
         vanillaGray: '#ECE6DA',
