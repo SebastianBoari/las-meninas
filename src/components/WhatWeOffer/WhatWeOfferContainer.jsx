@@ -4,7 +4,7 @@ import { useState } from 'react'
 const WhatWeOfferContainer = () => {
   const imageMap = {
     dining:
-      'https://www.woodbros.co.uk/wp-content/uploads/Range_OC_Aldeburgh.jpg',
+      'https://th.bing.com/th/id/R.bceb2e125777e14c4cc6d46c3acc9f71?rik=Fx9cV8MOze6f9Q&pid=ImgRaw&r=0',
     paintings:
       'https://th.bing.com/th/id/OIP.NSLeYfF2jpKH1biLSBMLzwHaFj?rs=1&pid=ImgDetMain',
     lighting:

@@ -22,21 +22,21 @@ const Contact = () => {
                 <ContactMap />
 
                 <div className="flex justify-between w-full">
-                  <div className="p-2 bg-white rounded-md">
-                    <p className="font-primary text-base not-italic font-normal text-blackened">
+                  <div className="p-2 bg-[#F5F5F5] rounded-md">
+                    <p className="text-sm not-italic font-light font-secondary text-blackened">
                       Lunes a Sábados
                     </p>
 
-                    <p className="font-primary text-base not-italic font-normal text-blackened">
+                    <p className="text-sm not-italic font-light font-secondary text-blackened">
                       10:00hs a 13:00hs
                     </p>
 
-                    <p className="font-primary text-base not-italic font-normal text-blackened">
+                    <p className="text-sm not-italic font-light font-secondary text-blackened">
                       16:30 a 19:30hs
                     </p>
                   </div>
-                  <div className="p-2 bg-white rounded-md">
-                    <p className="font-primary text-base not-italic font-normal text-blackened max-w-[128px]">
+                  <div className="p-2 bg-[#F5F5F5] rounded-md">
+                    <p className="font-secondary text-sm not-italic font-light text-blackened max-w-[128px]">
                       Calle Ficticia 2976 - Nueva Ciudad, San Provincia.
                     </p>
                   </div>

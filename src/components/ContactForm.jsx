@@ -80,10 +80,10 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.user_name}
-            className="w-full p-2 font-primary rounded-md placeholder:font-primary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
+            className="w-full p-2 font-secondary rounded-md placeholder:font-secondary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
           />
           {formik.touched.user_name && formik.errors.user_name ? (
-            <div className="font-primary text-base text-red-600 max-w-[280px] h-[24px] absolute">
+            <div className="font-secondary text-base text-red-600 max-w-[280px] h-[24px] absolute">
               {formik.errors.user_name}
             </div>
           ) : null}
@@ -97,10 +97,10 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.user_email}
-            className="w-full p-2 font-primary rounded-md placeholder:font-primary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
+            className="w-full p-2 font-secondary rounded-md placeholder:font-secondary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
           />
           {formik.touched.user_email && formik.errors.user_email ? (
-            <div className="font-primary text-base text-red-600 max-w-[280px] h-[24px] absolute">
+            <div className="font-secondary text-base text-red-600 max-w-[280px] h-[24px] absolute">
               {formik.errors.user_email}
             </div>
           ) : null}
@@ -114,10 +114,10 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.user_phone}
-            className="w-full p-2 font-primary rounded-md placeholder:font-primary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
+            className="w-full p-2 font-secondary rounded-md placeholder:font-secondary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
           />
           {formik.touched.user_phone && formik.errors.user_phone ? (
-            <div className="font-primary text-base text-red-600 max-w-[280px] h-[24px] absolute">
+            <div className="font-secondary text-base text-red-600 max-w-[280px] h-[24px] absolute">
               {formik.errors.user_phone}
             </div>
           ) : null}
@@ -131,10 +131,10 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.message}
-            className="w-full p-2 font-primary rounded-md placeholder:font-primary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
+            className="w-full p-2 font-secondary rounded-md placeholder:font-secondary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
           />
           {formik.touched.message && formik.errors.message ? (
-            <div className="font-primary text-base text-red-600 max-w-[280px] h-[24px] absolute">
+            <div className="font-secondary text-base text-red-600 max-w-[280px] h-[24px] absolute">
               {formik.errors.message}
             </div>
           ) : null}
@@ -144,7 +144,7 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={formik.isSubmitting}
-            className="self-end px-6 py-2 font-primary text-base not-italic font-normal transition duration-300 rounded-full bg-militar text-vanillaGray hover:bg-blackened hover:shadow-lg hover:text-vanilla"
+            className="self-end px-6 py-2 font-secondary text-base not-italic font-normal transition duration-300 rounded-full bg-militar text-vanillaGray hover:bg-blackened hover:shadow-lg hover:text-vanilla"
           >
             Enviar
           </button>
