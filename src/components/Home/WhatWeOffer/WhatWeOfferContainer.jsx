@@ -1,5 +1,6 @@
-import WhatWeOffer from './WhatWeOffer'
 import { useState } from 'react'
+
+import WhatWeOffer from './WhatWeOffer'
 
 const WhatWeOfferContainer = () => {
   const imageMap = {
@@ -9,7 +10,7 @@ const WhatWeOfferContainer = () => {
       'https://th.bing.com/th/id/OIP.NSLeYfF2jpKH1biLSBMLzwHaFj?rs=1&pid=ImgDetMain',
     lighting:
       'https://i.pinimg.com/736x/cf/4b/3e/cf4b3ee413f99983efad660d7c656985.jpg',
-  }
+  } // TODO [PRODUCTION]: Put on storage
 
   const [selectedImage, setSelectedImage] = useState(imageMap.dining)
 

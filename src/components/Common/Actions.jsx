@@ -1,6 +1,6 @@
-import MoneyIcon from '../partials/icons/MoneyIcon'
-import SellIcon from '../partials/icons/SellIcon'
-import LocationIcon from '../partials/icons/LocationIcon'
+import MoneyIcon from '../Partials/Icons/MoneyIcon'
+import SellIcon from '../Partials/Icons/SellIcon'
+import LocationIcon from '../Partials/Icons/LocationIcon'
 
 const Actions = () => {
   return (

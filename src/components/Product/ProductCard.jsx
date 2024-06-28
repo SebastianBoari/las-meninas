@@ -1,11 +1,11 @@
 import Carousel from '../Carousel/Carousel'
 
-import OrnamentFooterLeft from '../../partials/ornaments/OrnamentFooterLeft'
-import OrnamentFooterRight from '../../partials/ornaments/OrnamentFooterRight'
-import OrnamentTopLeft from '../../partials/ornaments/OrnamentTopLeft'
-import OrnamentTopRight from '../../partials/ornaments/OrnamentTopRight'
-import OrnamentCrown from '../../partials/ornaments/OrnamentCrown'
-import OrnamentFooterCenter from '../../partials/ornaments/OrnamentFooterCenter'
+import OrnamentFooterLeft from '../Partials/Ornaments/OrnamentFooterLeft'
+import OrnamentFooterRight from '../Partials/Ornaments/OrnamentFooterRight'
+import OrnamentTopLeft from '../Partials/Ornaments/OrnamentTopLeft'
+import OrnamentTopRight from '../Partials/Ornaments/OrnamentTopRight'
+import OrnamentCrown from '../Partials/Ornaments/OrnamentCrown'
+import OrnamentFooterCenter from '../Partials/Ornaments/OrnamentFooterCenter'
 
 const ProductCard = ({
   title,
@@ -25,15 +25,15 @@ const ProductCard = ({
         </div>
 
         <div className="flex flex-col justify-between min-h-[220px] gap-3 px-4">
-          <h1 className="font-primary text-2xl">{title}</h1>
-          <p className="font-primary text-xl">{description}</p>
-          <p className="font-primary text-xl">
+          <h1 className="text-2xl font-primary">{title}</h1>
+          <p className="text-xl font-primary">{description}</p>
+          <p className="text-xl font-primary">
             Cantidad:
             {quantity
               ? ` ${quantity} unidades disponibles`
               : ' Única unidad disponible'}
           </p>
-          <p className="font-primary text-xl">
+          <p className="text-xl font-primary">
             {price
               ? `${currency ? 'USD' : 'ARS'}$${price}`
               : 'Consultar precio'}

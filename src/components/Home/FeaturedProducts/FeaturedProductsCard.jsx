@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion'
 
-import OrnamentFooterLeft from '../../partials/ornaments/OrnamentFooterLeft'
-import OrnamentFooterRight from '../../partials/ornaments/OrnamentFooterRight'
-
-import OrnamentTopLeft from '../../partials/ornaments/OrnamentTopLeft'
-import OrnamentTopRight from '../../partials/ornaments/OrnamentTopRight'
-import OrnamentCrown from '../../partials/ornaments/OrnamentCrown'
+import OrnamentFooterLeft from '../../Partials/Ornaments/OrnamentFooterLeft'
+import OrnamentFooterRight from '../../Partials/Ornaments/OrnamentFooterRight'
+import OrnamentTopLeft from '../../Partials/Ornaments/OrnamentTopLeft'
+import OrnamentTopRight from '../../Partials/Ornaments/OrnamentTopRight'
+import OrnamentCrown from '../../Partials/Ornaments/OrnamentCrown'
 
 const FeaturedProductsCard = ({ product, isActive, setActiveCard }) => {
   return (
@@ -46,7 +45,7 @@ const FeaturedProductsCard = ({ product, isActive, setActiveCard }) => {
             />
           </div>
 
-          <p className="px-2 py-2 font-primary not-italic font-normal text-m text-blackened">
+          <p className="px-2 py-2 not-italic font-normal font-primary text-m text-blackened">
             {product.description}
           </p>
 

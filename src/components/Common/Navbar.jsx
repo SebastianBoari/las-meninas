@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react'
 
 import { NavLink, useLocation } from 'react-router-dom'
 
-import Crown from '../partials/ornaments/OrnamentCrown'
-import FooterLeft from '../partials/ornaments/OrnamentFooterLeft'
-import FooterRight from '../partials/ornaments/OrnamentFooterRight'
+import Crown from '../Partials/Ornaments/OrnamentCrown'
+import FooterLeft from '../Partials/Ornaments/OrnamentFooterLeft'
+import FooterRight from '../Partials/Ornaments/OrnamentFooterRight'
 
 let tabs = [
   { id: 'home', label: 'Inicio', href: '/' },
@@ -61,7 +61,7 @@ const Navbar = () => {
                   <Crown width={'14px'} height={'9px'} color={'#FCEFBB'} />
                 </motion.div>
 
-                <span className="relative z-10 font-primary text-base font-normal text-vanilla">
+                <span className="relative z-10 text-base font-normal font-primary text-vanilla">
                   {tab.label}
                 </span>
 

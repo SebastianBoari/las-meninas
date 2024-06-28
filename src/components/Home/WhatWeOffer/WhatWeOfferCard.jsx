@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion'
 
-import OrnamentCrown from '../../partials/ornaments/OrnamentCrown'
-import OrnamentTopLeft from '../../partials/ornaments/OrnamentTopLeft'
-import OrnamentTopRight from '../../partials/ornaments/OrnamentTopRight'
-import OrnamentFooterLeft from '../../partials/ornaments/OrnamentFooterLeft'
-import OrnamentFooterCenter from '../../partials/ornaments/OrnamentFooterCenter'
-import OrnamentFooterRight from '../../partials/ornaments/OrnamentFooterRight'
+import OrnamentCrown from '../../Partials/Ornaments/OrnamentCrown'
+import OrnamentTopLeft from '../../Partials/Ornaments/OrnamentTopLeft'
+import OrnamentTopRight from '../../Partials/Ornaments/OrnamentTopRight'
+import OrnamentFooterLeft from '../../Partials/Ornaments/OrnamentFooterLeft'
+import OrnamentFooterCenter from '../../Partials/Ornaments/OrnamentFooterCenter'
+import OrnamentFooterRight from '../../Partials/Ornaments/OrnamentFooterRight'
 
-import FurnitureIcon from '../../partials/icons/FurnitureIcon'
-import ArtIcon from '../../partials/icons/ArtIcon'
-import LightningIcon from '../../partials/icons/LightningIcon'
+import FurnitureIcon from '../../Partials/Icons/FurnitureIcon'
+import ArtIcon from '../../Partials/Icons/ArtIcon'
+import LightningIcon from '../../Partials/Icons/LightningIcon'
 
 const WhatWeOfferCard = ({ images, selectedImage, setSelectedImage }) => {
   const handleImageChange = (imageKey) => {
@@ -25,7 +25,7 @@ const WhatWeOfferCard = ({ images, selectedImage, setSelectedImage }) => {
       </div>
 
       <div className="flex flex-col items-center justify-between h-full gap-2 px-3 py-1">
-        <div className="p-2 font-primary text-lg not-italic font-normal text-center rounded-md text-blackened max-w-56">
+        <div className="p-2 text-lg not-italic font-normal text-center rounded-md font-primary text-blackened max-w-56">
           <h3 className="text-center">
             En <strong>Las Meninas</strong> puede encontrar una amplia gama de
             antigüedades.

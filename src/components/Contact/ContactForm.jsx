@@ -1,15 +1,15 @@
 import emailjs from '@emailjs/browser'
-import { emailjsVariables } from '../env'
+import { emailjsVariables } from '../../env'
 
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 
-import OrnamentTopLeft from '../partials/ornaments/OrnamentTopLeft'
-import OrnamentCrown from '../partials/ornaments/OrnamentCrown'
-import OrnamentTopRight from '../partials/ornaments/OrnamentTopRight'
-import OrnamentFooterLeft from '../partials/ornaments/OrnamentFooterLeft'
-import OrnamentFooterCenter from '../partials/ornaments/OrnamentFooterCenter'
-import OrnamentFooterRight from '../partials/ornaments/OrnamentFooterRight'
+import OrnamentTopLeft from '../Partials/Ornaments/OrnamentTopLeft'
+import OrnamentCrown from '../Partials/Ornaments/OrnamentCrown'
+import OrnamentTopRight from '../Partials/Ornaments/OrnamentTopRight'
+import OrnamentFooterLeft from '../Partials/Ornaments/OrnamentFooterLeft'
+import OrnamentFooterCenter from '../Partials/Ornaments/OrnamentFooterCenter'
+import OrnamentFooterRight from '../Partials/Ornaments/OrnamentFooterRight'
 
 const ContactForm = () => {
   const formik = useFormik({
@@ -80,7 +80,7 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.user_name}
-            className="w-full p-2 font-secondary rounded-md placeholder:font-secondary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
+            className="w-full p-2 rounded-md font-secondary placeholder:font-secondary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
           />
           {formik.touched.user_name && formik.errors.user_name ? (
             <div className="font-secondary text-base text-red-600 max-w-[280px] h-[24px] absolute">
@@ -97,7 +97,7 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.user_email}
-            className="w-full p-2 font-secondary rounded-md placeholder:font-secondary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
+            className="w-full p-2 rounded-md font-secondary placeholder:font-secondary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
           />
           {formik.touched.user_email && formik.errors.user_email ? (
             <div className="font-secondary text-base text-red-600 max-w-[280px] h-[24px] absolute">
@@ -114,7 +114,7 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.user_phone}
-            className="w-full p-2 font-secondary rounded-md placeholder:font-secondary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
+            className="w-full p-2 rounded-md font-secondary placeholder:font-secondary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
           />
           {formik.touched.user_phone && formik.errors.user_phone ? (
             <div className="font-secondary text-base text-red-600 max-w-[280px] h-[24px] absolute">
@@ -131,7 +131,7 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.message}
-            className="w-full p-2 font-secondary rounded-md placeholder:font-secondary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
+            className="w-full p-2 rounded-md font-secondary placeholder:font-secondary text-blackened placeholder:text-blackened/60 placeholder:text-base focus:outline-none drop-shadow focus:shadow-lg"
           />
           {formik.touched.message && formik.errors.message ? (
             <div className="font-secondary text-base text-red-600 max-w-[280px] h-[24px] absolute">
@@ -144,7 +144,7 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={formik.isSubmitting}
-            className="self-end px-6 py-2 font-secondary text-base not-italic font-normal transition duration-300 rounded-full bg-militar text-vanillaGray hover:bg-blackened hover:shadow-lg hover:text-vanilla"
+            className="self-end px-6 py-2 text-base not-italic font-normal transition duration-300 rounded-full font-secondary bg-militar text-vanillaGray hover:bg-blackened hover:shadow-lg hover:text-vanilla"
           >
             Enviar
           </button>

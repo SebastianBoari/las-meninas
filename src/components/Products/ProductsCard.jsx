@@ -3,11 +3,11 @@ import { truncateText } from '../../utils'
 
 import { NavLink } from 'react-router-dom'
 
-import OrnamentFooterLeft from '../../partials/ornaments/OrnamentFooterLeft'
-import OrnamentFooterRight from '../../partials/ornaments/OrnamentFooterRight'
-import OrnamentTopLeft from '../../partials/ornaments/OrnamentTopLeft'
-import OrnamentTopRight from '../../partials/ornaments/OrnamentTopRight'
-import OrnamentCrown from '../../partials/ornaments/OrnamentCrown'
+import OrnamentFooterLeft from '../Partials/Ornaments/OrnamentFooterLeft'
+import OrnamentFooterRight from '../Partials/Ornaments/OrnamentFooterRight'
+import OrnamentTopLeft from '../Partials/Ornaments/OrnamentTopLeft'
+import OrnamentTopRight from '../Partials/Ornaments/OrnamentTopRight'
+import OrnamentCrown from '../Partials/Ornaments/OrnamentCrown'
 
 const ProductsCard = ({
   id,
@@ -56,10 +56,10 @@ const ProductsCard = ({
           </div>
 
           <div className="p-2">
-            <h3 className="font-primary text-lg not-italic font-bold text-blackened">
+            <h3 className="text-lg not-italic font-bold font-primary text-blackened">
               {truncateText(title, 80)}
             </h3>
-            <p className="font-primary text-base not-italic font-normal text-blackened">
+            <p className="text-base not-italic font-normal font-primary text-blackened">
               {truncateText(description, 120)}
             </p>
           </div>

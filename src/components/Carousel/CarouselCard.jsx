@@ -1,9 +1,9 @@
-import OrnamentTopLeft from '../../partials/ornaments/OrnamentTopLeft'
-import OrnamentCrown from '../../partials/ornaments/OrnamentCrown'
-import OrnamentTopRight from '../../partials/ornaments/OrnamentTopRight'
-import OrnamentFooterLeft from '../../partials/ornaments/OrnamentFooterLeft'
-import OrnamentFooterCenter from '../../partials/ornaments/OrnamentFooterCenter'
-import OrnamentFooterRight from '../../partials/ornaments/OrnamentFooterRight'
+import OrnamentTopLeft from '../Partials/Ornaments/OrnamentTopLeft'
+import OrnamentCrown from '../Partials/Ornaments/OrnamentCrown'
+import OrnamentTopRight from '../Partials/Ornaments/OrnamentTopRight'
+import OrnamentFooterLeft from '../Partials/Ornaments/OrnamentFooterLeft'
+import OrnamentFooterCenter from '../Partials/Ornaments/OrnamentFooterCenter'
+import OrnamentFooterRight from '../Partials/Ornaments/OrnamentFooterRight'
 
 const CarouselCard = () => {
   return (
@@ -15,17 +15,17 @@ const CarouselCard = () => {
       </div>
 
       <div className="w-full h-full p-1.5 flex flex-col justify-center xl:gap-8 xl:px-1 spxs:px-4 spxs:gap-4 ">
-        <h2 className="w-full font-primary text-2xl not-italic text-blackened">
+        <h2 className="w-full text-2xl not-italic font-primary text-blackened">
           Curiosidades
         </h2>
-        <p className="font-primary text-xl font-normal text-blackened">
+        <p className="text-xl font-normal font-primary text-blackened">
           Seguinos en nuestras redes sociales para descubrir nuestros artículos
           disponibles y ponete en contacto con nosotros si tenés alguna duda.
         </p>
         <a
           target="_blank"
           href="https://www.instagram.com/lasmeninas_curiosidades/"
-          className="self-end px-6 py-3 font-primary text-base not-italic font-normal transition duration-300 rounded-full bg-militar text-vanillaGray hover:bg-blackened hover:shadow-lg hover:text-vanilla"
+          className="self-end px-6 py-3 text-base not-italic font-normal transition duration-300 rounded-full font-primary bg-militar text-vanillaGray hover:bg-blackened hover:shadow-lg hover:text-vanilla"
         >
           Instagram
         </a>
