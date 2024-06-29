@@ -3,7 +3,7 @@ import { getFirestore } from 'firebase/firestore'
 import { getStorage } from 'firebase/storage'
 import { getAuth } from 'firebase/auth'
 
-import { firebaseVariables } from '../env'
+import { firebaseVariables } from '@env'
 
 const firebaseConfig = {
   apiKey: firebaseVariables.apiKey,

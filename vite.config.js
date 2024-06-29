@@ -14,6 +14,9 @@ export default defineConfig({
       '@fb': resolve(__dirname, 'src/firebase'),
       '@services': resolve(__dirname, 'src/firebase/services'),
       '@utils': resolve(__dirname, 'src/utils'),
+      '@env': resolve(__dirname, 'src/env.js'),
+      '@context': resolve(__dirname, 'src/context'),
+      '@styles': resolve(__dirname, 'src/styles'),
     },
   },
 })

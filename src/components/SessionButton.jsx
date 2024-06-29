@@ -1,8 +1,9 @@
 import { useState, useContext } from 'react'
-import { AuthContext } from '../context/AuthContext'
 import { NavLink } from 'react-router-dom'
-import UserIcon from '../partials/icons/UserIcon'
 import { motion, AnimatePresence } from 'framer-motion'
+
+import { AuthContext } from '@context/AuthContext'
+import UserIcon from '@components/Partials/Icons/UserIcon'
 
 const SessionButton = () => {
   const [isVisible, setIsVisible] = useState(null)
@@ -31,7 +32,7 @@ const SessionButton = () => {
             {!user ? (
               <li className="flex flex-col items-center w-full">
                 <NavLink
-                  className="w-full p-2 font-primary text-base text-center transition duration-300 rounded-md cursor-pointer text-blackened hover:text-vanillaGray hover:bg-militar"
+                  className="w-full p-2 text-base text-center transition duration-300 rounded-md cursor-pointer font-primary text-blackened hover:text-vanillaGray hover:bg-militar"
                   to="/iniciar-sesion"
                 >
                   Iniciar sesión
@@ -41,7 +42,7 @@ const SessionButton = () => {
               <>
                 <li className="flex flex-col items-center w-full">
                   <button
-                    className="w-full p-2 font-primary text-base text-center transition duration-300 rounded-md cursor-pointer text-blackened hover:text-vanillaGray hover:bg-red-800"
+                    className="w-full p-2 text-base text-center transition duration-300 rounded-md cursor-pointer font-primary text-blackened hover:text-vanillaGray hover:bg-red-800"
                     onClick={logout}
                   >
                     Cerrar sesión
@@ -49,7 +50,7 @@ const SessionButton = () => {
                 </li>
                 <li className="flex flex-col items-center w-full">
                   <NavLink
-                    className="w-full p-2 font-primary text-base text-center transition duration-300 rounded-md cursor-pointer text-blackened hover:text-vanillaGray hover:bg-militar"
+                    className="w-full p-2 text-base text-center transition duration-300 rounded-md cursor-pointer font-primary text-blackened hover:text-vanillaGray hover:bg-militar"
                     to="/admin"
                   >
                     Panel

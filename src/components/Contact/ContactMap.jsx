@@ -1,5 +1,5 @@
 import { APIProvider, Map, Marker } from '@vis.gl/react-google-maps'
-import { firebaseVariables } from '../../env'
+import { firebaseVariables } from '@env'
 
 const ContactMap = () => {
   const position = { lat: -33.011059, lng: -58.518454 }

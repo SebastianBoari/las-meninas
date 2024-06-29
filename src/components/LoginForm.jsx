@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
-import { AuthContext } from '../context/AuthProvider'
+import { AuthContext } from '@context/AuthProvider'
 
 export default function LoginForm() {
   const { login } = useContext(AuthContext)
