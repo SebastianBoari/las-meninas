@@ -1,9 +1,9 @@
-import OrnamentTopLeft from '../Partials/Ornaments/OrnamentTopLeft'
-import OrnamentCrown from '../Partials/Ornaments/OrnamentCrown'
-import OrnamentTopRight from '../Partials/Ornaments/OrnamentTopRight'
-import OrnamentFooterLeft from '../Partials/Ornaments/OrnamentFooterLeft'
-import OrnamentFooterCenter from '../Partials/Ornaments/OrnamentFooterCenter'
-import OrnamentFooterRight from '../Partials/Ornaments/OrnamentFooterRight'
+import OrnamentTopLeft from '../../Partials/Ornaments/OrnamentTopLeft'
+import OrnamentCrown from '../../Partials/Ornaments/OrnamentCrown'
+import OrnamentTopRight from '../../Partials/Ornaments/OrnamentTopRight'
+import OrnamentFooterLeft from '../../Partials/Ornaments/OrnamentFooterLeft'
+import OrnamentFooterCenter from '../../Partials/Ornaments/OrnamentFooterCenter'
+import OrnamentFooterRight from '../../Partials/Ornaments/OrnamentFooterRight'
 
 const CarouselCard = () => {
   return (

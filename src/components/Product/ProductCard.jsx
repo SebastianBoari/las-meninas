@@ -1,4 +1,4 @@
-import Carousel from '../Carousel/Carousel'
+import Carousel from '../Common/Carousel'
 
 import OrnamentFooterLeft from '../Partials/Ornaments/OrnamentFooterLeft'
 import OrnamentFooterRight from '../Partials/Ornaments/OrnamentFooterRight'
