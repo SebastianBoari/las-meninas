@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { truncateText } from '../../utils'
+import { truncateText } from '@utils'
 
 import { NavLink } from 'react-router-dom'
 

@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import useFirestoreDocument from '../../hooks/useFirestoreDocument'
+import useFirestoreDocument from '@hooks/useFirestoreDocument'
 
 import ProductCard from './ProductCard'
 

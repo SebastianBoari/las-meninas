@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { fetchDocumentById } from '../firebase/services/FirestoreService'
+import { fetchDocumentById } from '@services/FirestoreService'
 
 const useFirestoreDocument = (collectionName, documentId) => {
   const [documentData, setDocumentData] = useState(null)

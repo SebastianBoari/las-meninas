@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import useFirestoreQuery from '../../../hooks/useFirestoreQuery'
+import useFirestoreQuery from '@hooks/useFirestoreQuery'
 
 import FeaturedProductsCard from './FeaturedProductsCard'
 import FeaturedProductsTitle from './FeaturedProductsTitle'

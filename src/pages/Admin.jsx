@@ -1,6 +1,6 @@
-import Navbar from '../components/Common/Navbar'
-import Footer from '../components/Common/Footer'
-import AdminPanel from '../components/AdminPanel.jsx'
+import Navbar from '@components/Common/Navbar'
+import Footer from '@components/Common/Footer'
+import AdminPanel from '@components/AdminPanel.jsx'
 
 const Admin = () => {
   return (

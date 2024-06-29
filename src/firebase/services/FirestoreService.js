@@ -1,4 +1,4 @@
-import { db } from '../firebase'
+import { db } from '@fb/firebase'
 import {
   collection,
   query,

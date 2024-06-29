@@ -3,7 +3,7 @@ import {
   loginUser,
   logoutUser,
   subscribeToAuthChanges,
-} from '../firebase/services/AuthService'
+} from '@services/AuthService'
 
 const useAuth = () => {
   const [user, setUser] = useState(null)

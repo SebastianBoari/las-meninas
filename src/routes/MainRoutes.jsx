@@ -1,9 +1,9 @@
-import Home from '../pages/Home'
-import Products from '../pages/Products'
-import Product from '../pages/Product'
-import Contact from '../pages/Contact'
+import Home from '@pages/Home'
+import Products from '@pages/Products'
+import Product from '@pages/Product'
+import Contact from '@pages/Contact'
 
-import NotFound from '../pages/NotFound'
+import NotFound from '@pages/NotFound'
 
 const mainRoutes = [
   {

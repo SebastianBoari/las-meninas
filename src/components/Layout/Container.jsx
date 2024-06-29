@@ -17,7 +17,7 @@ const Container = ({ children }) => {
                 <Crown width={'35'} height={'23'} color={'#FCEFBB'} />
                 <img
                   className="w-16 h-16 rounded-full"
-                  src="../assets/las-meninas-icon.png"
+                  src="/assets/las-meninas-icon.png"
                   alt="Icono de Las Meninas: Casa de Antigüedades"
                 />
                 <div className="flex flex-row items-center justify-between gap-5">

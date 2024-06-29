@@ -1,12 +1,12 @@
-import Container from '../components/Layout/Container' // Background, glass and ornament
+import Container from '@components/Layout/Container' // Background, glass and ornament
 
-import Navbar from '../components/Common/Navbar'
-import Actions from '../components/Common/Actions'
-import Footer from '../components/Common/Footer'
+import Navbar from '@components/Common/Navbar'
+import Actions from '@components/Common/Actions'
+import Footer from '@components/Common/Footer'
 
-import ContactForm from '../components/Contact/ContactForm'
-import ContactMap from '../components/Contact/ContactMap'
-import ContactMisc from '../components/Contact/ContactMisc'
+import ContactForm from '@components/Contact/ContactForm'
+import ContactMap from '@components/Contact/ContactMap'
+import ContactMisc from '@components/Contact/ContactMisc'
 
 const Contact = () => {
   return (
