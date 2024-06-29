@@ -57,10 +57,10 @@ export default function LoginForm() {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.email}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 p-1.5 text-blackened shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blackened sm:text-sm sm:leading-6"
                 />
                 {formik.touched.email && formik.errors.email ? (
-                  <div className="absolute top-[40px] left-[8px] top-0 text-sm text-red-600">
+                  <div className="absolute top-[64px] left-[0px] top-0 text-sm text-red-600">
                     {formik.errors.email}
                   </div>
                 ) : null}
@@ -71,7 +71,7 @@ export default function LoginForm() {
               <div className="flex items-center justify-between">
                 <label
                   htmlFor="password"
-                  className="block text-sm font-medium leading-6 text-gray-900"
+                  className="block text-sm font-medium leading-6 text-blackened"
                 >
                   Contraseña
                 </label>
@@ -86,10 +86,10 @@ export default function LoginForm() {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.password}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 p-1.5 text-blackened shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blackened sm:text-sm sm:leading-6"
                 />
                 {formik.touched.password && formik.errors.password ? (
-                  <div className="absolute top-[40px] left-[8px] text-sm text-red-600">
+                  <div className="absolute top-[64px] left-[0px] text-sm text-red-600">
                     {formik.errors.password}
                   </div>
                 ) : null}
@@ -106,7 +106,7 @@ export default function LoginForm() {
               <button
                 type="submit"
                 disabled={formik.isSubmitting}
-                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="flex w-full justify-center rounded-md bg-blackened px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-militar focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blackened transition duration-300"
               >
                 Iniciar sesión
               </button>
