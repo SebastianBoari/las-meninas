@@ -18,7 +18,7 @@ const SessionButton = () => {
         onClick={() => setIsVisible(!isVisible)}
         whileHover={{ scale: 1.05 }}
       >
-        <UserIcon width={'32px'} height={'32px'} color={'#ECE6DA'} />
+        <UserIcon width={'32px'} height={'32px'} color={'#26211E'} />
       </motion.button>
 
       <AnimatePresence>
