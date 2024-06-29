@@ -1,11 +1,11 @@
-import Navbar from '@components/Common/Navbar'
+import Header from '@components/Common/Header'
 import Footer from '@components/Common/Footer'
 import AdminPanel from '@components/AdminPanel.jsx'
 
 const Admin = () => {
   return (
     <div className="w-full">
-      <Navbar />
+      <Header />
       <AdminPanel />
       <Footer />
     </div>

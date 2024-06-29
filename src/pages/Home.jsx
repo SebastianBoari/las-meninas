@@ -1,6 +1,5 @@
 import Container from '@components/Layout/Container' // Background, glass and ornament
-
-import Navbar from '@components/Common/Navbar'
+import Header from '@components/Common/Header'
 import Actions from '@components/Common/Actions'
 import Footer from '@components/Common/Footer'
 import Welcome from '@components/Home/Welcome'
@@ -12,7 +11,7 @@ const App = () => {
   return (
     <Container>
       <div className="w-full">
-        <Navbar />
+        <Header />
         <Welcome />
         <FeaturedProductsContainer />
         <CarouselContainer />

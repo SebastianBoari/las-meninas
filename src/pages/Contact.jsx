@@ -1,6 +1,6 @@
 import Container from '@components/Layout/Container' // Background, glass and ornament
 
-import Navbar from '@components/Common/Navbar'
+import Header from '@components/Common/Header'
 import Actions from '@components/Common/Actions'
 import Footer from '@components/Common/Footer'
 
@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <Container>
       <div className="w-full">
-        <Navbar />
+        <Header />
         <div className="grid mt-12 mb-16 place-items-center">
           <div className="lg:grid lg:grid-cols-2 place-items-center spxs:flex spxs:flex-col spxs:items-center spxs:gap-4">
             <ContactForm />

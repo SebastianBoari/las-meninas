@@ -1,4 +1,4 @@
-import Navbar from '@components/Common/Navbar'
+import Header from '@components/Common/Header'
 import Actions from '@components/Common/Actions'
 import Footer from '@components/Common/Footer'
 import Container from '@components/Layout/Container' // Background, glass and ornament
@@ -8,7 +8,7 @@ const Products = () => {
   return (
     <Container>
       <div className="w-full">
-        <Navbar />
+        <Header />
         <ProductsContainer />
         <Actions />
         <Footer />
