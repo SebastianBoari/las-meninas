@@ -8,6 +8,8 @@ import FooterRight from '@components/Partials/Ornaments/OrnamentFooterRight'
 import TopLeft from '@components/Partials/Ornaments/OrnamentTopLeft'
 import TopRight from '@components/Partials/Ornaments/OrnamentTopRight'
 
+import SessionButton from '@components/SessionButton'
+
 const Footer = () => {
   return (
     <>
@@ -78,9 +80,19 @@ const Footer = () => {
       </div>
 
       <div className="grid w-full spxs:my-2 splg:my-4 md:my-8 place-items-center">
-        <p className="font-secondary spxs:text-[8px] md:text-xs font-normal text-vanillaGray">
-          Developed by SebastianBoari
-        </p>
+        <div className="flex flex-col items-center gap-2">
+          <SessionButton />
+          <p className="font-secondary spxs:text-[8px] md:text-xs font-normal text-vanillaGray">
+            Developed by{' '}
+            <a
+              href="https://github.com/SebastianBoari"
+              target="_blank"
+              className="hover:underline"
+            >
+              SebastianBoari
+            </a>
+          </p>
+        </div>
       </div>
     </>
   )

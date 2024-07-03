@@ -6,6 +6,8 @@ import {
   getDocs,
   doc,
   getDoc,
+  deleteDoc,
+  addDoc,
 } from 'firebase/firestore'
 
 const fetchDocuments = async (collectionName, filters = []) => {
@@ -34,12 +36,13 @@ const fetchDocuments = async (collectionName, filters = []) => {
 const fetchDocumentById = async (collectionName, documentId) => {
   try {
     const documentRef = doc(db, collectionName, documentId)
+
     const documentSnapshot = await getDoc(documentRef)
 
     if (documentSnapshot.exists()) {
       return { id: documentSnapshot.id, ...documentSnapshot.data() }
     } else {
-      throw new Error('No such document!')
+      throw new Error('No such document')
     }
   } catch (error) {
     console.error(
@@ -50,4 +53,46 @@ const fetchDocumentById = async (collectionName, documentId) => {
   }
 }
 
-export { fetchDocuments, fetchDocumentById }
+const deleteDocumentById = async (collectionName, documentId) => {
+  try {
+    const documentRef = doc(db, collectionName, documentId)
+
+    await deleteDoc(documentRef)
+
+    console.log(`Document with ID ${documentId} successfully deleted.`) // TODO [PRODUCTION]: Delete console.error
+  } catch (error) {
+    console.error(
+      `Error deleting document ${documentId} from collection ${collectionName}: ${error}`
+    ) // TODO [PRODUCTION]: Delete console.error
+
+    throw error
+  }
+}
+
+const createDocument = async (collectionName, newDocument) => {
+  try {
+    const documentRef = await addDoc(collection(db, collectionName), {
+      title: newDocument.title,
+      description: newDocument.description,
+      featured: newDocument.featured,
+      currency: newDocument.currency,
+      quantity: newDocument.quantity,
+      price: newDocument.price,
+      thumbnails: newDocument.thumbnails,
+    })
+
+    if (!documentRef.id) {
+      throw new Error('The document has not been created')
+    }
+
+    return { id: documentRef.id, ...documentRef }
+  } catch (error) {
+    console.error(
+      `Error creating document ${document.title} in collection ${collectionName}: ${error}`
+    ) // TODO [PRODUCTION]: Delete console.error
+
+    throw error
+  }
+}
+
+export { fetchDocuments, fetchDocumentById, deleteDocumentById, createDocument }

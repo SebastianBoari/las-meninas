@@ -1,24 +1,37 @@
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect, useRef } from 'react'
 import { NavLink } from 'react-router-dom'
 
 import { motion, AnimatePresence } from 'framer-motion'
 
 import { AuthContext } from '@context/AuthProvider'
-import UserIcon from '@components/Partials/Icons/UserIcon'
 
 const SessionButton = () => {
   const [isVisible, setIsVisible] = useState(null)
-
   const { user, logout } = useContext(AuthContext)
+  const ref = useRef()
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setIsVisible(null)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [ref])
 
   return (
-    <div className="relative">
+    <div className="relative" ref={ref}>
       <motion.button
         whileTap={{ scale: 0.8 }}
         onClick={() => setIsVisible(!isVisible)}
         whileHover={{ scale: 1.05 }}
+        className="text-sm text-vanillaGray font-primary hover:underline"
       >
-        <UserIcon width={'32px'} height={'32px'} color={'#26211E'} />
+        Administro este sitio
       </motion.button>
 
       <AnimatePresence>
