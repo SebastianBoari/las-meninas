@@ -11,7 +11,7 @@ import {
   updateDoc,
 } from 'firebase/firestore'
 
-const fetchDocuments = async (collectionName, filters = []) => {
+const getDocuments = async (collectionName, filters = []) => {
   try {
     let collectionRef = collection(db, collectionName)
 
@@ -34,7 +34,7 @@ const fetchDocuments = async (collectionName, filters = []) => {
   }
 }
 
-const fetchDocumentById = async (collectionName, documentId) => {
+const getDocumentById = async (collectionName, documentId) => {
   try {
     const documentRef = doc(db, collectionName, documentId)
 
@@ -54,7 +54,7 @@ const fetchDocumentById = async (collectionName, documentId) => {
   }
 }
 
-const deleteDocumentById = async (collectionName, documentId) => {
+const deleteDocument = async (collectionName, documentId) => {
   try {
     const documentRef = doc(db, collectionName, documentId)
 
@@ -115,9 +115,9 @@ const updateDocument = async (collectionName, documentId, field, data) => {
 }
 
 export {
-  fetchDocuments,
-  fetchDocumentById,
-  deleteDocumentById,
+  getDocuments,
+  getDocumentById,
+  deleteDocument,
   createDocument,
   updateDocument,
 }

@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { deleteDocumentById } from '@services/FirestoreService'
+import { deleteDocument } from '@services/FirestoreService'
 
-const useFirestoreDeleteDoc = () => {
+const useFirestoreDeleteDocument = () => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
   const [success, setSuccess] = useState(false)
@@ -11,7 +11,7 @@ const useFirestoreDeleteDoc = () => {
     setError(null)
     setSuccess(false)
     try {
-      await deleteDocumentById(collectionName, documentId)
+      await deleteDocument(collectionName, documentId)
       setSuccess(true)
     } catch (err) {
       setError(err)
@@ -23,4 +23,4 @@ const useFirestoreDeleteDoc = () => {
   return { deleteDoc, loading, error, success }
 }
 
-export default useFirestoreDeleteDoc
+export default useFirestoreDeleteDocument
