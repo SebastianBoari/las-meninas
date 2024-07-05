@@ -1,8 +1,8 @@
 import ProductsTable from '@components/Admin/Products/ProductsTable'
-import useFirestoreQuery from '@hooks/useFirestoreQuery'
+import useFirestoreGetDocuments from '@hooks/useFirestoreGetDocuments'
 
 const ProductsTableContainer = () => {
-  const { data, loading, error } = useFirestoreQuery('products')
+  const { data, loading, error } = useFirestoreGetDocuments('products')
 
   if (loading) {
     return <div>Cargando...</div>

@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import useFirestoreDocument from '@hooks/useFirestoreDocument'
+import useFirestoreGetDocument from '@hooks/useFirestoreGetDocument'
 
 import ProductCard from '@components/Product/ProductCard'
 import ProductCardSkeleton from '@components/Product/ProductCardSkeleton'
@@ -11,7 +11,7 @@ const ProductContainer = () => {
     document: product,
     loading,
     error,
-  } = useFirestoreDocument('products', id)
+  } = useFirestoreGetDocument('products', id)
 
   if (error) {
     return (

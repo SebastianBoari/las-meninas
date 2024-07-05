@@ -1,13 +1,16 @@
 import { useState } from 'react'
 
-import useFirestoreQuery from '@hooks/useFirestoreQuery'
+import useFirestoreGetDocuments from '@hooks/useFirestoreGetDocuments'
 
 import FeaturedProductsCard from './FeaturedProductsCard'
 import FeaturedProductsTitle from './FeaturedProductsTitle'
 
 const FeaturedProductsContainer = () => {
   const filters = [{ field: 'featured', operator: '==', value: true }]
-  const { data: featuredProducts } = useFirestoreQuery('products', filters)
+  const { data: featuredProducts } = useFirestoreGetDocuments(
+    'products',
+    filters
+  )
 
   const [activeCard, setActiveCard] = useState(null)
 

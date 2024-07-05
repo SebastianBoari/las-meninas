@@ -1,12 +1,16 @@
 import { useState } from 'react'
 
-import useFirestoreQuery from '@hooks/useFirestoreQuery'
+import useFirestoreGetDocuments from '@hooks/useFirestoreGetDocuments'
 
 import ProductsCard from './ProductsCard'
 import ProductsCardSkeleton from './ProductsCardSkeleton.jsx'
 
 const ProductsContainer = () => {
-  const { data: products, loading, error } = useFirestoreQuery('products')
+  const {
+    data: products,
+    loading,
+    error,
+  } = useFirestoreGetDocuments('products')
 
   const [activeCard, setActiveCard] = useState(null)
 
