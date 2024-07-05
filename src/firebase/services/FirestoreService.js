@@ -8,6 +8,7 @@ import {
   getDoc,
   deleteDoc,
   addDoc,
+  updateDoc,
 } from 'firebase/firestore'
 
 const fetchDocuments = async (collectionName, filters = []) => {
@@ -60,6 +61,8 @@ const deleteDocumentById = async (collectionName, documentId) => {
     await deleteDoc(documentRef)
 
     console.log(`Document with ID ${documentId} successfully deleted.`) // TODO [PRODUCTION]: Delete console.error
+
+    return `Document with ID ${documentId} successfully deleted.`
   } catch (error) {
     console.error(
       `Error deleting document ${documentId} from collection ${collectionName}: ${error}`
@@ -95,4 +98,26 @@ const createDocument = async (collectionName, newDocument) => {
   }
 }
 
-export { fetchDocuments, fetchDocumentById, deleteDocumentById, createDocument }
+const updateDocument = async (collectionName, documentId, field, data) => {
+  try {
+    const documentRef = doc(db, collectionName, documentId)
+
+    const updatedDocument = await updateDoc(documentRef, { [field]: data })
+
+    return updatedDocument
+  } catch (error) {
+    console.error(
+      `Error updating document ${documentId} from collection ${collectionName}: ${error}`
+    ) // TODO [PRODUCTION]: Delete console.error
+
+    throw error
+  }
+}
+
+export {
+  fetchDocuments,
+  fetchDocumentById,
+  deleteDocumentById,
+  createDocument,
+  updateDocument,
+}
