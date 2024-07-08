@@ -1,5 +1,5 @@
 import ReactDom from 'react-dom'
-import CrossIcon from '@components/Partials/Icons/CrossIcon'
+import CrossIcon from '@components/partials/icons/CrossIcon'
 
 const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null

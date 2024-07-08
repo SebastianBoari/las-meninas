@@ -1,4 +1,4 @@
-import ProductTableRow from './ProductTableRow'
+import * as TableRow from '@components/admin/products/ProductsTableRow'
 
 const ProductsTable = ({ products }) => {
   return (
@@ -27,7 +27,7 @@ const ProductsTable = ({ products }) => {
 
           <tbody>
             {products.map((product) => (
-              <ProductTableRow
+              <TableRow
                 key={product.id}
                 id={product.id}
                 title={product.title}

@@ -17,6 +17,7 @@ export default defineConfig({
       '@env': resolve(__dirname, 'src/env.js'),
       '@context': resolve(__dirname, 'src/context'),
       '@styles': resolve(__dirname, 'src/styles'),
+      '@routes': resolve(__dirname, 'src/routes'),
     },
   },
 })

@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react'
 
 import { NavLink, useLocation } from 'react-router-dom'
 
-import Crown from '@components/Partials/Ornaments/OrnamentCrown'
-import FooterLeft from '@components/Partials/Ornaments/OrnamentFooterLeft'
-import FooterRight from '@components/Partials/Ornaments/OrnamentFooterRight'
+import Crown from '@components/partials/ornaments/OrnamentCrown'
+import FooterLeft from '@components/partials/ornaments/OrnamentFooterLeft'
+import FooterRight from '@components/partials/ornaments/OrnamentFooterRight'
 
 let tabs = [
   { id: 'home', label: 'Inicio', href: '/' },

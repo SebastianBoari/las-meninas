@@ -1,9 +1,9 @@
-import Crown from '@components/Partials/Ornaments/OrnamentCrown'
-import FooterLeft from '@components/Partials/Ornaments/OrnamentFooterLeft'
-import FooterCenter from '@components/Partials/Ornaments/OrnamentFooterCenter'
-import FooterRight from '@components/Partials/Ornaments/OrnamentFooterRight'
-import TopLeft from '@components/Partials/Ornaments/OrnamentTopLeft'
-import TopRight from '@components/Partials/Ornaments/OrnamentTopRight'
+import Crown from '@components/partials/ornaments/OrnamentCrown'
+import FooterLeft from '@components/partials/ornaments/OrnamentFooterLeft'
+import FooterCenter from '@components/partials/ornaments/OrnamentFooterCenter'
+import FooterRight from '@components/partials/ornaments/OrnamentFooterRight'
+import TopLeft from '@components/partials/ornaments/OrnamentTopLeft'
+import TopRight from '@components/partials/ornaments/OrnamentTopRight'
 
 const Container = ({ children }) => {
   return (

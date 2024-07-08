@@ -1,6 +1,6 @@
 import Admin from '@pages/Admin'
 import EditProduct from '@pages/EditProduct'
-import PrivateRoute from './PrivateRoute'
+import PrivateRoute from '@routes/PrivateRoute'
 
 const adminRoutes = [
   {

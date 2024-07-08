@@ -1,4 +1,4 @@
-import ProductsTableContainer from '@components/Admin/Products/ProductsTableContainer'
+import ProductsTableContainer from '@components/admin/products/ProductsTableContainer'
 
 const AdminPanel = () => {
   return (

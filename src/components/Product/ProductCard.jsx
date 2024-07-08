@@ -1,11 +1,11 @@
-import Carousel from '@components/Common/Carousel'
+import Carousel from '@components/common/Carousel'
 
-import OrnamentFooterLeft from '@components/Partials/Ornaments/OrnamentFooterLeft'
-import OrnamentFooterRight from '@components/Partials/Ornaments/OrnamentFooterRight'
-import OrnamentTopLeft from '@components/Partials/Ornaments/OrnamentTopLeft'
-import OrnamentTopRight from '@components/Partials/Ornaments/OrnamentTopRight'
-import OrnamentCrown from '@components/Partials/Ornaments/OrnamentCrown'
-import OrnamentFooterCenter from '@components/Partials/Ornaments/OrnamentFooterCenter'
+import OrnamentFooterLeft from '@components/partials/ornaments/OrnamentFooterLeft'
+import OrnamentFooterRight from '@components/partials/ornaments/OrnamentFooterRight'
+import OrnamentTopLeft from '@components/partials/ornaments/OrnamentTopLeft'
+import OrnamentTopRight from '@components/partials/ornaments/OrnamentTopRight'
+import OrnamentCrown from '@components/partials/ornaments/OrnamentCrown'
+import OrnamentFooterCenter from '@components/partials/ornaments/OrnamentFooterCenter'
 
 const ProductCard = ({
   title,

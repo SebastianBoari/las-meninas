@@ -2,8 +2,8 @@ import { useState } from 'react'
 
 import useFirestoreGetDocuments from '@hooks/useFirestoreGetDocuments'
 
-import FeaturedProductsCard from './FeaturedProductsCard'
-import FeaturedProductsTitle from './FeaturedProductsTitle'
+import FeaturedProductsCard from '@components/home/featured-products/FeaturedProductsCard'
+import FeaturedProductsTitle from '@components/home/featured-products/FeaturedProductsTitle'
 
 const FeaturedProductsContainer = () => {
   const filters = [{ field: 'featured', operator: '==', value: true }]

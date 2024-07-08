@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 
-import OrnamentFooterLeft from '@components/Partials/Ornaments/OrnamentFooterLeft'
-import OrnamentFooterRight from '@components/Partials/Ornaments/OrnamentFooterRight'
-import OrnamentTopLeft from '@components/Partials/Ornaments/OrnamentTopLeft'
-import OrnamentTopRight from '@components/Partials/Ornaments/OrnamentTopRight'
-import OrnamentCrown from '@components/Partials/Ornaments/OrnamentCrown'
+import OrnamentFooterLeft from '@components/partials/ornaments/OrnamentFooterLeft'
+import OrnamentFooterRight from '@components/partials/ornaments/OrnamentFooterRight'
+import OrnamentTopLeft from '@components/partials/ornaments/OrnamentTopLeft'
+import OrnamentTopRight from '@components/partials/ornaments/OrnamentTopRight'
+import OrnamentCrown from '@components/partials/ornaments/OrnamentCrown'
 
 const FeaturedProductsCard = ({ product, isActive, setActiveCard }) => {
   return (

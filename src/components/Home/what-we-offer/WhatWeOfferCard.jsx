@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion'
 
-import OrnamentCrown from '@components/Partials/Ornaments/OrnamentCrown'
-import OrnamentTopLeft from '@components/Partials/Ornaments/OrnamentTopLeft'
-import OrnamentTopRight from '@components/Partials/Ornaments/OrnamentTopRight'
-import OrnamentFooterLeft from '@components/Partials/Ornaments/OrnamentFooterLeft'
-import OrnamentFooterCenter from '@components/Partials/Ornaments/OrnamentFooterCenter'
-import OrnamentFooterRight from '@components/Partials/Ornaments/OrnamentFooterRight'
-import FurnitureIcon from '@components/Partials/Icons/FurnitureIcon'
-import ArtIcon from '@components/Partials/Icons/ArtIcon'
-import LightningIcon from '@components/Partials/Icons/LightningIcon'
+import OrnamentCrown from '@components/partials/ornaments/OrnamentCrown'
+import OrnamentTopLeft from '@components/partials/ornaments/OrnamentTopLeft'
+import OrnamentTopRight from '@components/partials/ornaments/OrnamentTopRight'
+import OrnamentFooterLeft from '@components/partials/ornaments/OrnamentFooterLeft'
+import OrnamentFooterCenter from '@components/partials/ornaments/OrnamentFooterCenter'
+import OrnamentFooterRight from '@components/partials/ornaments/OrnamentFooterRight'
+import FurnitureIcon from '@components/partials/icons/FurnitureIcon'
+import ArtIcon from '@components/partials/icons/ArtIcon'
+import LightningIcon from '@components/partials/icons/LightningIcon'
 
 const WhatWeOfferCard = ({ images, selectedImage, setSelectedImage }) => {
   const handleImageChange = (imageKey) => {

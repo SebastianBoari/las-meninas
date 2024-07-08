@@ -3,11 +3,11 @@ import { truncateText } from '@utils'
 
 import { NavLink } from 'react-router-dom'
 
-import OrnamentFooterLeft from '../Partials/Ornaments/OrnamentFooterLeft'
-import OrnamentFooterRight from '../Partials/Ornaments/OrnamentFooterRight'
-import OrnamentTopLeft from '../Partials/Ornaments/OrnamentTopLeft'
-import OrnamentTopRight from '../Partials/Ornaments/OrnamentTopRight'
-import OrnamentCrown from '../Partials/Ornaments/OrnamentCrown'
+import OrnamentFooterLeft from '@components/partials/ornaments/OrnamentFooterLeft'
+import OrnamentFooterRight from '@components/partials/ornaments/OrnamentFooterRight'
+import OrnamentTopLeft from '@components/partials/ornaments/OrnamentTopLeft'
+import OrnamentTopRight from '@components/partials/ornaments/OrnamentTopRight'
+import OrnamentCrown from '@components/partials/ornaments/OrnamentCrown'
 
 const ProductsCard = ({
   id,

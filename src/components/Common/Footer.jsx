@@ -1,14 +1,14 @@
-import TelephoneIcon from '@components/Partials/Icons/TelephoneIcon'
-import InstagramIcon from '@components/Partials/Icons/InstagramIcon'
-import LocationPointIcon from '@components/Partials/Icons/LocationPointIcon'
+import TelephoneIcon from '@components/partials/icons/TelephoneIcon'
+import InstagramIcon from '@components/partials/icons/InstagramIcon'
+import LocationPointIcon from '@components/partials/icons/LocationPointIcon'
 
-import Crown from '@components/Partials/Ornaments/OrnamentCrown'
-import FooterLeft from '@components/Partials/Ornaments/OrnamentFooterLeft'
-import FooterRight from '@components/Partials/Ornaments/OrnamentFooterRight'
-import TopLeft from '@components/Partials/Ornaments/OrnamentTopLeft'
-import TopRight from '@components/Partials/Ornaments/OrnamentTopRight'
+import Crown from '@components/partials/ornaments/OrnamentCrown'
+import FooterLeft from '@components/partials/ornaments/OrnamentFooterLeft'
+import FooterRight from '@components/partials/ornaments/OrnamentFooterRight'
+import TopLeft from '@components/partials/ornaments/OrnamentTopLeft'
+import TopRight from '@components/partials/ornaments/OrnamentTopRight'
 
-import SessionButton from '@components/SessionButton'
+import SessionButton from '@components/auth/SessionButton'
 
 const Footer = () => {
   return (

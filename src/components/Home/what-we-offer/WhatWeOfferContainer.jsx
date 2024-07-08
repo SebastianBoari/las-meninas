@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import WhatWeOffer from './WhatWeOffer'
+import WhatWeOffer from '@components/home/what-we-offer/WhatWeOffer'
 
 const WhatWeOfferContainer = () => {
   const imageMap = {

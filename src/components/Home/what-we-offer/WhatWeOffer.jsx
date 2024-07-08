@@ -1,5 +1,5 @@
-import WhatWeOfferCard from './WhatWeOfferCard'
-import WhatWeOfferFigure from './WhatWeOfferFigure'
+import WhatWeOfferCard from '@components/home/what-we-offer/WhatWeOfferCard'
+import WhatWeOfferFigure from '@components/home/what-we-offer/WhatWeOfferFigure'
 
 const WhatWeOffer = ({ images, selectedImage, setSelectedImage }) => {
   return (

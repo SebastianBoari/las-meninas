@@ -1,5 +1,5 @@
-import Modal from '@components/Common/Modal'
-import WarnIcon from '@components/Partials/Icons/WarnIcon'
+import Modal from '@components/common/Modal'
+import WarnIcon from '@components/partials/icons/WarnIcon'
 import useFirestoreDeleteDocument from '@hooks/useFirestoreDeleteDocument'
 
 const DeleteProductModal = ({ isOpen, setIsOpen, id, title }) => {

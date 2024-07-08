@@ -2,10 +2,10 @@ import { useState } from 'react'
 
 import { motion } from 'framer-motion'
 
-import CopyIcon from '@components/Partials/Icons/CopyIcon'
-import CopyIconCheck from '@components/Partials/Icons/CopyIconCheck'
-import WhatsAppIcon from '@components/Partials/Icons/WhatsAppIcon'
-import InstagramColoredIcon from '@components/Partials/Icons/InstagramColoredIcon'
+import CopyIcon from '@components/partials/icons/CopyIcon'
+import CopyIconCheck from '@components/partials/icons/CopyIconCheck'
+import WhatsAppIcon from '@components/partials/icons/WhatsAppIcon'
+import InstagramColoredIcon from '@components/partials/icons/InstagramColoredIcon'
 
 const ContactMisc = () => {
   const [copied, setCopied] = useState(false)

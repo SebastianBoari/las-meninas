@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react'
 import { storage } from '@fb/firebase'
 import { ref, listAll, getDownloadURL } from 'firebase/storage'
 
-import Carousel from '@components/Common/Carousel'
-import CarouselCard from '@components/Home/Carousel/CarouselCard'
-import CarouselTitle from '@components/Home/Carousel/CarouselTitle'
+import Carousel from '@components/common/Carousel'
+import CarouselCard from '@components/home/carousel/CarouselCard'
+import CarouselTitle from '@components/home/carousel/CarouselTitle'
 
 const CarouselContainer = () => {
   const [images, setImages] = useState([])

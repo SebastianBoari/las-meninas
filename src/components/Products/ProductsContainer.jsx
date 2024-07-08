@@ -2,8 +2,8 @@ import { useState } from 'react'
 
 import useFirestoreGetDocuments from '@hooks/useFirestoreGetDocuments'
 
-import ProductsCard from './ProductsCard'
-import ProductsCardSkeleton from './ProductsCardSkeleton.jsx'
+import ProductsCard from '@components/products/ProductsCard'
+import ProductsCardSkeleton from '@components/products/ProductsCardSkeleton'
 
 const ProductsContainer = () => {
   const {

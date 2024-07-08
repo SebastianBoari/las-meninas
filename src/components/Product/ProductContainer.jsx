@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom'
 import useFirestoreGetDocument from '@hooks/useFirestoreGetDocument'
 
-import ProductCard from '@components/Product/ProductCard'
-import ProductCardSkeleton from '@components/Product/ProductCardSkeleton'
+import ProductCard from '@components/product/ProductCard'
+import ProductCardSkeleton from '@components/product/ProductCardSkeleton'
 
 const ProductContainer = () => {
   const { id } = useParams()

@@ -1,5 +1,5 @@
-const EditProductPane = () => {
-  return <div>EditProductPane</div>
+const EditProductPanel = () => {
+  return <div>EditProductPanel</div>
 }
 
-export default EditProductPane
+export default EditProductPanel

@@ -1,7 +1,7 @@
-import Header from '@components/Common/Header'
-import Footer from '@components/Common/Footer'
-import Container from '@components/Layout/Container'
-import EditProductPanel from '@components/Admin/Product/EditProductPanel'
+import Header from '@components/common/Header'
+import Footer from '@components/common/Footer'
+import Container from '@components/layout/Container'
+import EditProductPanel from '@components/admin/product/EditProductPanel'
 
 const EditProduct = () => {
   return (

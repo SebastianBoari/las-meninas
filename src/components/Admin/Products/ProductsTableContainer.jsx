@@ -1,4 +1,4 @@
-import ProductsTable from '@components/Admin/Products/ProductsTable'
+import ProductsTable from '@components/admin/products/ProductsTable'
 import useFirestoreGetDocuments from '@hooks/useFirestoreGetDocuments'
 
 const ProductsTableContainer = () => {

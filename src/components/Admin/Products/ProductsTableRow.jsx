@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import DeleteProductModal from '@components/Admin/Products/DeleteProductModal'
+import DeleteProductModal from '@components/admin/DeleteProductModal'
 
 const ProductTableRow = ({
   id,
