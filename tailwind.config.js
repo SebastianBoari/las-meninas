@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         primary: ['Cormorant Garamond', 'serif'],
         secondary: ['Frank Ruhl Libre', 'serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
         vanillaGray: '#ECE6DA',

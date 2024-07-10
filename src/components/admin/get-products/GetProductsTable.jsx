@@ -1,8 +1,8 @@
-import Row from '@components/admin/get-products/GetProductsItem'
+import Item from '@components/admin/get-products/GetProductsItem'
 
 const GetProductsTable = ({ products }) => {
   return (
-    <div>
+    <div className="font-roboto">
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table className="w-full text-sm text-left text-gray-500 rtl:text-right dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -19,15 +19,14 @@ const GetProductsTable = ({ products }) => {
               <th scope="col" className="px-6 py-3">
                 Precio
               </th>
-              <th scope="col" className="px-6 py-3">
-                Acciones
-              </th>
+              <th scope="col" className="px-6 py-3"></th>
+              <th scope="col" className="px-6 py-3"></th>
             </tr>
           </thead>
 
           <tbody>
             {products.map((product) => (
-              <Row
+              <Item
                 key={product.id}
                 id={product.id}
                 title={product.title}
