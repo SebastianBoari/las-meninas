@@ -1,5 +1,4 @@
 import Admin from '@pages/Admin'
-import EditProduct from '@pages/EditProduct'
 import PrivateRoute from '@routes/PrivateRoute'
 
 const adminRoutes = [
@@ -8,14 +7,6 @@ const adminRoutes = [
     element: (
       <PrivateRoute>
         <Admin />
-      </PrivateRoute>
-    ),
-  },
-  {
-    path: '/admin/editar/:pid',
-    element: (
-      <PrivateRoute>
-        <EditProduct />
       </PrivateRoute>
     ),
   },

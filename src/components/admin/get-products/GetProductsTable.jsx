@@ -1,6 +1,6 @@
-import * as TableRow from '@components/admin/products/ProductsTableRow'
+import Row from '@components/admin/get-products/GetProductsItem'
 
-const ProductsTable = ({ products }) => {
+const GetProductsTable = ({ products }) => {
   return (
     <div>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -27,7 +27,7 @@ const ProductsTable = ({ products }) => {
 
           <tbody>
             {products.map((product) => (
-              <TableRow
+              <Row
                 key={product.id}
                 id={product.id}
                 title={product.title}
@@ -87,4 +87,4 @@ const ProductsTable = ({ products }) => {
   )
 }
 
-export default ProductsTable
+export default GetProductsTable

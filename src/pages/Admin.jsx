@@ -1,14 +1,14 @@
 import Header from '@components/common/Header'
 import Footer from '@components/common/Footer'
 import Container from '@components/layout/Container'
-import AdminPanel from '@components/admin/AdminPanel'
+import GetProducts from '@components/admin/GetProducts'
 
 const Admin = () => {
   return (
     <Container>
       <div className="w-full">
         <Header />
-        <AdminPanel />
+        <GetProducts />
         <Footer />
       </div>
     </Container>

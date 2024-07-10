@@ -1,7 +1,7 @@
-import ProductsTable from '@components/admin/products/ProductsTable'
+import Table from '@components/admin/get-products/GetProductsTable'
 import useFirestoreGetDocuments from '@hooks/useFirestoreGetDocuments'
 
-const ProductsTableContainer = () => {
+const GetProductsContainer = () => {
   const { data, loading, error } = useFirestoreGetDocuments('products')
 
   if (loading) {
@@ -13,10 +13,10 @@ const ProductsTableContainer = () => {
   }
 
   return (
-    <div>
-      <ProductsTable products={data} />
+    <div className="my-16">
+      <Table products={data} />
     </div>
   )
 }
 
-export default ProductsTableContainer
+export default GetProductsContainer
