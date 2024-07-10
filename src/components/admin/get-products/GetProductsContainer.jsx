@@ -12,11 +12,7 @@ const GetProductsContainer = () => {
     return <div>Error!</div>
   }
 
-  return (
-    <div className="my-16">
-      <Table products={data} />
-    </div>
-  )
+  return <Table products={data} />
 }
 
 export default GetProductsContainer
