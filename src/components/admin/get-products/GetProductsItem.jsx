@@ -8,6 +8,7 @@ const GetProductsItem = ({
   featured,
   currency,
   price,
+  quantity,
 }) => {
   const [deleteIsOpen, deleteSetIsOpen] = useState(false)
 
@@ -21,6 +22,8 @@ const GetProductsItem = ({
       </th>
 
       <td className="px-6 py-4">{description}</td>
+
+      <td className="px-6 py-4">{quantity}</td>
 
       <td className="px-6 py-4">{featured ? 'Destacado' : 'Regular'}</td>
 
