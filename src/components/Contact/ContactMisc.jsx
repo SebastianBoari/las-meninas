@@ -1,7 +1,5 @@
 import { useState } from 'react'
-
 import { motion } from 'framer-motion'
-
 import CopyIcon from '@components/partials/icons/CopyIcon'
 import CopyIconCheck from '@components/partials/icons/CopyIconCheck'
 import WhatsAppIcon from '@components/partials/icons/WhatsAppIcon'
