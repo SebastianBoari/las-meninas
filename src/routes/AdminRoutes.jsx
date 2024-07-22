@@ -1,5 +1,5 @@
-import Admin from '@pages/Admin'
 import PrivateRoute from '@routes/PrivateRoute'
+import Admin from '@pages/Admin'
 
 const adminRoutes = [
   {

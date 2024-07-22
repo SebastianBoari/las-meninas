@@ -10,13 +10,18 @@ const GetProductsContainer = () => {
   } = useFirestoreGetDocuments('products')
 
   const [currentPage, setCurrentPage] = useState(1)
+
   const productsPerPage = 10
+
   const indexOfLastProduct = currentPage * productsPerPage
+
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage
+
   const currentProducts = products.slice(
     indexOfFirstProduct,
     indexOfLastProduct
   )
+
   const totalPages = Math.ceil(products.length / productsPerPage)
 
   const handlePreviousPage = () => {
@@ -40,7 +45,7 @@ const GetProductsContainer = () => {
   }
 
   return (
-    <div className="font-roboto">
+    <div className="my-16 font-roboto">
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
         <Table products={currentProducts} />
         <nav

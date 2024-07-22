@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import mainRoutes from './MainRoutes'
-import adminRoutes from './AdminRoutes'
-import authRoutes from './AuthRoutes'
+import mainRoutes from '@routes/mainRoutes'
+import adminRoutes from '@routes/adminRoutes'
+import authRoutes from '@routes/authRoutes'
 
 const router = createBrowserRouter([
   ...mainRoutes,
