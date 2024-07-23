@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react'
-import { useParams, NavLink } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { useLocation, NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
-const AdminNavbar = () => {
-  const { action } = useParams()
+const Navbar = () => {
   const [param, setParam] = useState('')
+  const location = useLocation()
 
   useEffect(() => {
-    setParam(action)
-  }, [action])
+    setParam(location.pathname)
+  }, [location])
 
   return (
     <header className="flex items-center w-full h-20 gap-8 bg-white drop-shadow">
@@ -30,11 +30,11 @@ const AdminNavbar = () => {
           <li className="flex items-center h-20">
             <NavLink
               className={
-                param === undefined
+                param === '/admin/productos'
                   ? 'flex items-center justify-center h-20 text-sm font-normal text-gray-600 transition duration-150 border-b-2 border-sky-600 font-roboto hover:text-gray-400 hover:border-b-2 hover:border-gray-300'
                   : 'flex items-center justify-center h-20 text-sm font-normal text-gray-400 transition duration-150 border-b-2 border-white font-roboto hover:text-gray-500 hover:border-b-2 hover:border-gray-300'
               }
-              to="/admin"
+              to="/admin/productos"
             >
               Productos
             </NavLink>
@@ -43,7 +43,7 @@ const AdminNavbar = () => {
           <li className="flex items-center h-20">
             <NavLink
               className={
-                param === 'crear-producto'
+                param === '/admin/crear-producto'
                   ? 'flex items-center justify-center h-20 text-sm font-normal text-gray-600 transition duration-150 border-b-2 border-sky-600 font-roboto hover:text-gray-400 hover:border-b-2 hover:border-gray-300'
                   : 'flex items-center justify-center h-20 text-sm font-normal text-gray-400 transition duration-150 border-b-2 border-white font-roboto hover:text-gray-500 hover:border-b-2 hover:border-gray-300'
               }
@@ -58,4 +58,4 @@ const AdminNavbar = () => {
   )
 }
 
-export default AdminNavbar
+export default Navbar

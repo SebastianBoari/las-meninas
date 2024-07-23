@@ -1,14 +1,19 @@
-import PrivateRoute from '@routes/PrivateRoute'
+import AdminLayout from '@layouts/AdminLayout'
 import Admin from '@pages/Admin'
+import GetProducts from '@pages/admin/GetProducts'
+import CreateProduct from '@pages/admin/CreateProduct'
+import UpdateProduct from '@pages/admin/UpdateProduct'
 
 const adminRoutes = [
   {
     path: '/admin',
-    element: (
-      <PrivateRoute>
-        <Admin />
-      </PrivateRoute>
-    ),
+    element: <AdminLayout />,
+    children: [
+      { index: true, element: <Admin /> },
+      { path: 'productos', element: <GetProducts /> },
+      { path: 'crear-producto', element: <CreateProduct /> },
+      { path: 'modificar-producto/:pid', element: <UpdateProduct /> },
+    ],
   },
 ]
 
