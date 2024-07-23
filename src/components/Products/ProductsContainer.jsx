@@ -1,16 +1,10 @@
-import { useState } from 'react'
-
-import useFirestoreGetDocuments from '@hooks/useFirestoreGetDocuments'
-
+import { useState, useContext } from 'react'
+import { AppContext } from '@context/AppProvider'
 import ProductsCard from '@components/products/ProductsCard'
 import ProductsCardSkeleton from '@components/products/ProductsCardSkeleton'
 
 const ProductsContainer = () => {
-  const {
-    data: products,
-    loading,
-    error,
-  } = useFirestoreGetDocuments('products')
+  const { products, loading, error } = useContext(AppContext)
 
   const [activeCard, setActiveCard] = useState(null)
 

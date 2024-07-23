@@ -15,7 +15,13 @@ const AppProvider = ({ children }) => {
   }, [data])
 
   return (
-    <AppContext.Provider value={{ products, loading, error }}>
+    <AppContext.Provider
+      value={{
+        products,
+        loading,
+        error,
+      }}
+    >
       {children}
     </AppContext.Provider>
   )
