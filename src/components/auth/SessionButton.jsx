@@ -1,8 +1,6 @@
 import { useState, useContext, useEffect, useRef } from 'react'
 import { NavLink } from 'react-router-dom'
-
 import { motion, AnimatePresence } from 'framer-motion'
-
 import { AuthContext } from '@context/AuthProvider'
 
 const SessionButton = () => {

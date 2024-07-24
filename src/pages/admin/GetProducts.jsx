@@ -2,7 +2,7 @@ import GetProductsContainer from '@components/admin/get-products/GetProductsCont
 
 const GetProducts = () => {
   return (
-    <div>
+    <div className="flex items-center justify-center bg-gray-50">
       <GetProductsContainer />
     </div>
   )
