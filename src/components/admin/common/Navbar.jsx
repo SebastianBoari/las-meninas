@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 import SessionButton from '@components/auth/AdminSessionButton'
+import ProductsButton from '@components/admin/common/ProductsButton'
 
 const Navbar = () => {
   return (
     <header className="flex items-center w-full h-20 gap-8 bg-white shadow">
       <div className="flex items-center justify-between w-full p-4">
-        <div>
+        <div className="flex items-center gap-8">
           <a target="_blanc" href="/">
             <motion.div
               whileHover={{ scale: 1.02 }}
@@ -17,19 +18,18 @@ const Navbar = () => {
               <span>Las Meninas</span>
             </motion.div>
           </a>
+
+          <div>
+            <NavLink
+              to="/admin"
+              className="text-sm font-medium text-gray-400 transition duration-200 hover:text-gray-500 font-roboto"
+            >
+              Panel de Admin.
+            </NavLink>
+          </div>
+
+          <ProductsButton />
         </div>
-
-        <nav>
-          <ul className="flex items-center justify-between gap-8">
-            <li className="text-sm font-medium hover:underline">
-              <NavLink to="/admin/productos">Productos</NavLink>
-            </li>
-
-            <li className="text-sm font-medium hover:underline">
-              <NavLink to="/admin/crear-producto">Crear producto</NavLink>
-            </li>
-          </ul>
-        </nav>
 
         <div className="flex items-center">
           <SessionButton />
