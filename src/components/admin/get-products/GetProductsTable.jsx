@@ -3,7 +3,7 @@ import Item from '@components/admin/get-products/GetProductsItem'
 const GetProductsTable = ({ products }) => {
   return (
     <table className="w-full text-sm text-left text-gray-500 rtl:text-right">
-      <thead className="text-xs text-gray-700 uppercase bg-gray-100">
+      <thead className="text-xs text-gray-700 uppercase bg-gray-50">
         <tr>
           <th scope="col" className="px-6 py-3">
             Producto

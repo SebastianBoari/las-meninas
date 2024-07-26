@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
-import { NavLink } from 'react-router-dom'
 import SessionButton from '@components/auth/AdminSessionButton'
-import ProductsButton from '@components/admin/common/ProductsButton'
+import NavbarLink from '@components/admin/common/NavbarLink'
 
 const Navbar = () => {
   return (
@@ -19,16 +18,10 @@ const Navbar = () => {
             </motion.div>
           </a>
 
-          <div>
-            <NavLink
-              to="/admin"
-              className="text-sm font-medium text-gray-400 transition duration-200 hover:text-gray-500 font-roboto"
-            >
-              Panel de Admin.
-            </NavLink>
+          <div className="flex items-center gap-8">
+            <NavbarLink text={'Panel de admin.'} path={'/admin'} />
+            <NavbarLink text={'Productos'} path={'/admin/productos'} />
           </div>
-
-          <ProductsButton />
         </div>
 
         <div className="flex items-center">

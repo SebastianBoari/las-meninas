@@ -49,7 +49,7 @@ const GetProductsContainer = () => {
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
         <Table products={currentProducts} />
         <nav
-          className="flex flex-wrap items-center justify-between p-2 pt-4 bg-gray-100 flex-column md:flex-row"
+          className="flex flex-wrap items-center justify-between p-2 pt-4 bg-gray-50 flex-column md:flex-row"
           aria-label="Table navigation"
         >
           <span className="block w-full mb-4 text-sm font-normal text-gray-500 md:mb-0 md:inline md:w-auto">
