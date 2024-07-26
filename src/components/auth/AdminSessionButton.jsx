@@ -28,7 +28,7 @@ const AdminSessionButton = () => {
         onClick={() => setIsVisible(!isVisible)}
         whileHover={{ scale: 1.05 }}
       >
-        <UserIcon width={'32px'} height={'32px'} color={'#f3f4f6'} />
+        <UserIcon width={'32px'} height={'32px'} color={'#e5e7eb'} />
       </motion.button>
 
       <AnimatePresence>
@@ -42,7 +42,7 @@ const AdminSessionButton = () => {
           >
             <li className="flex flex-col items-center w-full">
               <button
-                className="w-full p-2 text-sm text-center transition duration-300 rounded-md cursor-pointer font-primary text-blackened hover:text-vanillaGray hover:bg-red-800 font-roboto"
+                className="w-full p-2 text-sm font-medium text-center text-gray-400 transition duration-300 rounded-md cursor-pointer font-primary hover:text-vanillaGray hover:bg-red-600 font-roboto"
                 onClick={logout}
               >
                 Cerrar sesión
