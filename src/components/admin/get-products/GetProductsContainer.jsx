@@ -45,7 +45,7 @@ const GetProductsContainer = () => {
   }
 
   return (
-    <div className="my-16 font-roboto">
+    <div className="font-roboto">
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
         <Table products={currentProducts} />
         <nav
