@@ -19,7 +19,10 @@ export default function LoginForm() {
     onSubmit: async (values, { setSubmitting }) => {
       setAuthError(null)
       const error = await login(values.email, values.password)
-      if (error) setAuthError(error.message)
+      if (error) {
+        setAuthError(error.message)
+        console.log(error)
+      }
       setSubmitting(false)
     },
   })
