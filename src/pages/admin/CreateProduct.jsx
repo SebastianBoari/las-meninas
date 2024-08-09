@@ -2,7 +2,7 @@ import CreateProductForm from '@components/admin/create-product/CreateProductFor
 
 const CreateProduct = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center my-16">
       <CreateProductForm />
     </div>
   )

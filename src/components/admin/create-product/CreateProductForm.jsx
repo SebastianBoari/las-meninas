@@ -1,10 +1,40 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import PlusIcon from '@components/partials/icons/PlusIcon'
 import CrossIcon from '@components/partials/icons/CrossIcon'
 import { motion } from 'framer-motion'
+import useFirestoreCreateDocument from '@hooks/useFirestoreCreateDocument'
 
 const CreateProductForm = () => {
+  const [title, setTitle] = useState('')
+  const [description, setDescription] = useState('')
+  const [price, setPrice] = useState('')
+  const [quantity, setQuantity] = useState('')
+  const [currency, setCurrency] = useState('USD')
+  const [featured, setFeatured] = useState(false)
   const [thumbnails, setThumbnails] = useState([''])
+  const [submitted, setSubmitted] = useState(false)
+
+  const newDocument = {
+    title,
+    description,
+    price,
+    quantity,
+    currency,
+    featured,
+    thumbnails,
+  }
+
+  const { document, loading, error } = useFirestoreCreateDocument(
+    'products',
+    submitted ? newDocument : null
+  )
+
+  useEffect(() => {
+    if (document) {
+      // Resetea el estado `submitted` después de que se ha creado el documento
+      setSubmitted(false)
+    }
+  }, [document])
 
   const handleAddThumbnail = () => {
     setThumbnails([...thumbnails, ''])
@@ -21,8 +51,19 @@ const CreateProductForm = () => {
     setThumbnails(newThumbnails)
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    if (!submitted) {
+      setSubmitted(true)
+    }
+  }
+
   return (
-    <form className="max-w-[270px] flex flex-col justify-between gap-4">
+    <form
+      className="max-w-[270px] flex flex-col justify-between gap-4"
+      onSubmit={handleSubmit}
+    >
       <div>
         <label
           htmlFor="title"
@@ -36,6 +77,8 @@ const CreateProductForm = () => {
             name="title"
             id="title"
             className="w-full px-2 py-1 text-gray-600 border-0 rounded-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-gray-600 sm:text-sm sm:leading-6 focus:outline-none"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
           />
         </div>
       </div>
@@ -54,6 +97,8 @@ const CreateProductForm = () => {
             className="block w-full p-2 text-gray-600 border-0 rounded-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-gray-600 sm:text-sm sm:leading-6 focus:outline-none"
             rows="3"
             cols="36"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
           ></textarea>
         </div>
       </div>
@@ -75,6 +120,8 @@ const CreateProductForm = () => {
             type="text"
             placeholder="0.00"
             className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-600 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-gray-600 sm:text-sm sm:leading-6 focus:outline-none"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
           />
           <div className="absolute inset-y-0 right-0 flex items-center">
             <label htmlFor="currency" className="sr-only">
@@ -84,6 +131,8 @@ const CreateProductForm = () => {
               id="currency"
               name="currency"
               className="h-full py-0 pl-2 text-gray-500 bg-transparent border-0 rounded-md pr-7 focus:ring-2 focus:ring-gray-600 sm:text-sm"
+              value={currency}
+              onChange={(e) => setCurrency(e.target.value)}
             >
               <option>USD</option>
               <option>ARS</option>
@@ -99,12 +148,13 @@ const CreateProductForm = () => {
         >
           Cantidad
         </label>
-
         <input
           type="text"
           name="quantity"
           id="quantity"
           className="block w-full px-2 py-1 text-gray-600 border-0 rounded-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-gray-600 sm:text-sm sm:leading-6 focus:outline-none"
+          value={quantity}
+          onChange={(e) => setQuantity(e.target.value)}
         />
       </div>
 
@@ -115,8 +165,13 @@ const CreateProductForm = () => {
         >
           Producto destacado
         </label>
-
-        <input name="featured" id="featured" type="checkbox" />
+        <input
+          name="featured"
+          id="featured"
+          type="checkbox"
+          checked={featured}
+          onChange={(e) => setFeatured(e.target.checked)}
+        />
       </div>
 
       <div className="flex flex-col">
@@ -167,6 +222,12 @@ const CreateProductForm = () => {
           className="px-4 py-1 font-medium text-white transition duration-150 bg-green-500 rounded-md shadow cursor-pointer hover:bg-green-600 hover:shadow-gray-200"
         />
       </div>
+
+      {loading && <p>Cargando...</p>}
+      {error && <p className="text-red-500">Error: {error.message}</p>}
+      {document && (
+        <p className="text-green-500">¡Producto creado exitosamente!</p>
+      )}
     </form>
   )
 }
