@@ -8,7 +8,6 @@ const AppProvider = ({ children }) => {
     useFirestoreGetDocuments('products')
 
   useEffect(() => {
-    console.log('useEffect')
     fetchData()
   }, [fetchData])
 
