@@ -5,6 +5,8 @@
  * @returns {String} - The truncated string.
  */
 export const truncateText = (text, limit) => {
+  if (typeof text !== 'string') return
+
   if (text.length <= limit) {
     return text
   }

@@ -33,7 +33,7 @@ const ProductsCard = ({
         >
           <img
             className="w-[260px] h-[240px] object-cover rounded-md drop-shadow-2xl"
-            src={thumbnails[0]}
+            src={typeof thumbnails !== 'object' ? '#' : thumbnails[0]}
             alt={description}
           />
         </motion.figure>
