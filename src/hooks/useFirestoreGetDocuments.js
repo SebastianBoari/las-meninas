@@ -1,13 +1,14 @@
-import { useState, useEffect } from 'react'
+import { useState, useCallback } from 'react'
 import { getDocuments } from '@services/FirestoreService'
 
-const useFirestoreGetDocuments = (collectionName, filters = []) => {
+const useFirestoreGetDocuments = (collectionName) => {
   const [data, setData] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
-  useEffect(() => {
-    const fetchData = async () => {
+  const fetchData = useCallback(
+    async (filters = []) => {
+      setLoading(true)
       try {
         const result = await getDocuments(collectionName, filters)
         setData(result)
@@ -16,12 +17,11 @@ const useFirestoreGetDocuments = (collectionName, filters = []) => {
       } finally {
         setLoading(false)
       }
-    }
+    },
+    [collectionName]
+  )
 
-    fetchData()
-  }, [collectionName, filters])
-
-  return { data, loading, error }
+  return { data, loading, error, fetchData }
 }
 
 export default useFirestoreGetDocuments

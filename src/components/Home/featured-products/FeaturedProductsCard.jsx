@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-
 import OrnamentFooterLeft from '@components/partials/ornaments/OrnamentFooterLeft'
 import OrnamentFooterRight from '@components/partials/ornaments/OrnamentFooterRight'
 import OrnamentTopLeft from '@components/partials/ornaments/OrnamentTopLeft'

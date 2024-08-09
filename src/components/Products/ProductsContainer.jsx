@@ -1,12 +1,18 @@
-import { useState, useContext } from 'react'
-import { AppContext } from '@context/AppProvider'
+import { useState, useEffect } from 'react'
+
+import useFirestoreGetDocuments from '@hooks/useFirestoreGetDocuments'
 import ProductsCard from '@components/products/ProductsCard'
 import ProductsCardSkeleton from '@components/products/ProductsCardSkeleton'
 
 const ProductsContainer = () => {
-  const { products, loading, error } = useContext(AppContext)
+  const { data, loading, error, fetchData } =
+    useFirestoreGetDocuments('products')
 
   const [activeCard, setActiveCard] = useState(null)
+
+  useEffect(() => {
+    fetchData()
+  }, [fetchData])
 
   const placeholderProducts = [
     { id: 1 },
@@ -37,7 +43,7 @@ const ProductsContainer = () => {
 
   return (
     <div className="grid items-center w-full my-32 xl:grid-cols-3 justify-items-center gap-x-2 gap-y-6 lg:grid-cols-2 spxs:grid-cols-1">
-      {products.map((product) => (
+      {data.map((product) => (
         <ProductsCard
           key={product.id}
           id={product.id}
