@@ -6,13 +6,13 @@ const AppContext = createContext()
 const AppProvider = ({ children }) => {
   const [products, setProducts] = useState(null)
 
-  const { data, loading, error } = useFirestoreGetDocuments('products')
+  const { data, loading, error, fetchData } =
+    useFirestoreGetDocuments('products')
 
   useEffect(() => {
-    if (data) {
-      setProducts(data)
-    }
-  }, [data])
+    fetchData()
+    setProducts(data)
+  }, [fetchData])
 
   return (
     <AppContext.Provider
