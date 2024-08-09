@@ -1,13 +1,9 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import Table from '@components/admin/get-products/GetProductsTable'
-import useFirestoreGetDocuments from '@hooks/useFirestoreGetDocuments'
+import { AppContext } from '@context/AppProvider'
 
 const GetProductsContainer = () => {
-  const {
-    data: products,
-    loading,
-    error,
-  } = useFirestoreGetDocuments('products')
+  const { products, loading, error } = useContext(AppContext)
 
   const [currentPage, setCurrentPage] = useState(1)
 

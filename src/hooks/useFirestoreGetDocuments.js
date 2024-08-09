@@ -10,6 +10,7 @@ const useFirestoreGetDocuments = (collectionName) => {
     async (filters = []) => {
       setLoading(true)
       try {
+        console.log('fetch')
         const result = await getDocuments(collectionName, filters)
         setData(result)
       } catch (error) {
