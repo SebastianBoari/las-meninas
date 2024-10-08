@@ -1,4 +1,4 @@
-import { useEffect, createContext } from 'react'
+import { useEffect, createContext, useMemo } from 'react'
 import useFirestoreGetDocuments from '@hooks/useFirestoreGetDocuments'
 
 const AppContext = createContext()
@@ -11,14 +11,17 @@ const AppProvider = ({ children }) => {
     fetchData()
   }, [fetchData])
 
+  const productsContext = useMemo(
+    () => ({
+      products: data,
+      loading,
+      error,
+    }),
+    [data, loading, error]
+  )
+
   return (
-    <AppContext.Provider
-      value={{
-        products: data,
-        loading,
-        error,
-      }}
-    >
+    <AppContext.Provider value={productsContext}>
       {children}
     </AppContext.Provider>
   )

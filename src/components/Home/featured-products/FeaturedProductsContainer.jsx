@@ -1,17 +1,14 @@
-import { useState } from 'react'
-import useFirestoreGetDocuments from '@hooks/useFirestoreGetDocuments'
+import { useState, useContext } from 'react'
+import { AppContext } from '@context/AppProvider'
 import FeaturedProductsCard from '@components/home/featured-products/FeaturedProductsCard'
 import FeaturedProductsTitle from '@components/home/featured-products/FeaturedProductsTitle'
-
+import { truncateText } from '@utils'
 const FeaturedProductsContainer = () => {
-  const filters = [{ field: 'featured', operator: '==', value: true }]
-
-  const { data: featuredProducts } = useFirestoreGetDocuments(
-    'products',
-    filters
-  )
+  const { products, loading, error } = useContext(AppContext)
 
   const [activeCard, setActiveCard] = useState(null)
+
+  const featuredProducts = products?.filter((product) => product.featured)
 
   return (
     <div className="flex flex-col splg:gap-16 spxs:gap-6 spxs:my-8 splg:my-32">
